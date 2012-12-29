@@ -25,7 +25,7 @@ AC_SUBST(DINGO_LOCALEDIR)
 # Checks for libraries
 # Initialize pkg-config
 PKG_PROG_PKG_CONFIG([0.25])
-AX_BOOST_BASE([1.49])
+AX_BOOST_BASE([1.48])
 PKG_CHECK_MODULES([DEPENDENCIES], [gtkmm-3.0 gstreamermm-0.10 libxml++-2.6 libmediainfo sqlite3 libnotify])
 
 AM_GLIB_GNU_GETTEXT
