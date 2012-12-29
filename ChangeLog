@@ -1,0 +1,13 @@
+2012-12-14  The Dingo Project  <http://dingo.phongvcao.com>
+
+	Dingo 0.5.0
+	
+	The first version of Dingo (v0.5.0) now has source code 
+	available under Dingo's sourceforge.net at
+	https://sourceforge.net/projects/dingomm/.
+	
+	If you want to know general changes made and functionalities
+	available for this version please refer to the NEWS file. If
+	you want to know commit-level changes please use 'git log'
+	against a clone of our git repository 
+	(https://github.com/phongvcao/dingo).

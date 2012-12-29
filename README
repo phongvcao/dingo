@@ -1,0 +1,40 @@
+GENERAL INFORMATION
+===================
+
+This is Dingo version 0.5.0. Dingo is a minimalist yet powerful media manager for Linux. It is able to manage and play both audio and video, in various file formats. 
+
+Dingo is a free and open-source software, licensed under the GNU GPL v3.0.
+
+The official website of Dingo is:
+  http://dingo.phongvcao.com/
+
+Dingo is developed using Github. To get a copy of the latest development tree, please go to this web page:
+  https://github.com/phongvcao/dingo
+
+Dingo is written in C/C++ and uses the following libraries: Gtkmm, GStreamermm, MediaInfo, SQLite3, libxml++, gettext.
+
+
+INSTALLATION
+============
+
+See the file INSTALL
+
+
+REPORT BUGS
+===========
+
+Bugs can be reported by emailing to phongvcao@phongvcao.com. Please include the following information in your bugs reports:
+- Your Linux distro name and version
+- Your GStreamermm and GStreamer version
+- Your Gtkmm and Gtk+ version
+- Your libxml++ and libxml version
+- Your MediaInfo version
+- What did you do causing the crash?
+
+
+DEVELOPMENT
+===========
+
+Please browse and fetch Dingo's source code at the following addresses:
+- https://github.com/phongvcao/dingo
+- https://sourceforge.net/projects/dingomm/

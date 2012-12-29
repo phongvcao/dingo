@@ -1,0 +1,23 @@
+<dingo version='0.5.1' type='dingo-playlist' author='Phong V. Cao' email='phongvcao@phongvcao.com' website='http://www.phongvcao.com/'>
+  <playlist name='Phong V. Cao' type='basic'>
+    <track>
+      <trackartist>Artist 3</trackartist>
+      <trackalbum>Album 3</trackalbum>
+      <tracknumber>3</tracknumber>
+      <tracktitle>Track 3</tracktitle>
+      <trackgenre>Genre 3</trackgenre>
+      <trackduration>3333333333333</trackduration>
+      <tracksize>33333333333</tracksize>
+      <trackfilename>track3.mkv</trackfilename>
+      <trackfileextension>.mkv</trackfileextension>
+      <trackuri>/home/phongvcao/track3.mkv</trackuri>
+      <tracksubtitleuri>/home/phongvcao/subtitle.srt</tracksubtitleuri>
+      <trackyear>2012</trackyear>
+      <trackbitrate>128</trackbitrate>
+      <trackmimetype>video/*</trackmimetype>
+      <trackdateadded>Today</trackdateadded>
+      <trackcomment>Comment 3</trackcomment>
+      <tracklyrics>Lyrics 3</tracklyrics>
+    </track>
+  </playlist>
+</dingo>

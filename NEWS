@@ -1,0 +1,90 @@
+=====================================================================================
+Dingo 0.5.0 - 2012-12-14 
+-------------------------------------------------------------------------------------
+Author/Maintainer: Phong V. Cao <phongvcao@phongvcao.com>
+=====================================================================================
+
+    Dingo 0.5.0 is the result of more than 1 year and 6 months of work
+    by Phong V. Cao <phongvcao@phongvcao.com> and authors and 
+    contributors of various Dingo's dependecies. 
+    
+    Dingo 0.5.0 is the first stable release of Dingo Media Manager.
+    
+    Notable New Features:
+    - Manage and filter both audios and videos
+    - Massive tracks - playlists membership management
+    - Multiple tracks info editing
+    - Repeat section
+    - Smart Shuffle
+    - Lyrics fetching (offline)
+    - TrayIcon with MiniPlayer
+    
+
+=====================================================================================
+SOURCES / PACKAGES
+=====================================================================================
+
+Sources
+-------
+
+    * Dingo 0.5.0 Tarballs (sourceforge.net)
+
+
+Packages
+--------
+
+    Download and installation information is available here
+    * http://dingo.phongvcao.com/download/
+    
+    Binaries
+    * Fedora: 
+    * OpenSUSE:
+    * Ubuntu:
+    * Linux Mint:
+
+
+=====================================================================================
+REPORT BUGS
+=====================================================================================
+
+    If you encounter any bad behavioror crashes with this release 
+    please do not hesitate to file bugs!
+    
+    * Please email to phongvcao@phongvcao.com with a description of
+    your bugs. Please include the following information:
+      - Your Linux distro name and version
+      - Your GStreamermm and GStreamer version
+      - Your Gtkmm and Gtk+ version
+      - Your libxml++ and libxml version
+      - Your MediaInfo version
+      - What did you do causing the crash?
+      
+    * Please feel free to include any additiontial information to the
+    above (such as screenshots, log files, etc...)
+
+
+=====================================================================================
+VALUED DINGO CONTRIBUTORS
+=====================================================================================
+
+    The following people contributed either directly through source
+    code or through emails answering questions of the development 
+    team. Without them there would be no release!
+    
+        Murray Cumming, Kjell Ahlstedt, Jerome Martinez, Dan Kennedy
+        
+    
+    The following people contributed updated translations to this 
+    release. Without them, our project's reach would be much more
+    limited!
+    
+    	Phong V. Cao, Khanh D. Cao, Khoa D. Cao
+    
+    
+    The following people contributed to the project through designing
+    icons/images/logos for the project. Without them, our project
+    would look terrible!
+    
+    	Custom Icon Design Team, Andreas Nilsson, Garrett LeSage,
+    	Jakub Steiner, K. Vishnoo Charan Reddy, Michael Monreal,
+    	Ryan Collier, Rhythmbox Icon Design Team

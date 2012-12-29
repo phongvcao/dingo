@@ -1,0 +1,17 @@
+bin_PROGRAMS = dingo
+
+dingo_SOURCES = dingo.cc dingo-application.cc dingo-mainwindow.cc dingo-mprisv2.cc dingo-mpriscommon.cc dingo-menubar.cc dingo-toolbar.cc dingo-playlisttreeview.cc dingo-genretreeview.cc dingo-artisttreeview.cc dingo-yeartreeview.cc dingo-albumtreeview.cc dingo-tracktreeview.cc dingo-trackinfowindow.cc dingo-multipletracksinfowindow.cc dingo-trackplaylisteditwindow.cc dingo-videoarea.cc dingo-controlbar.cc dingo-statusbar.cc dingo-statusicon.cc dingo-aboutdialog.cc dingo-hscale.cc dingo-programoptions.cc dingo-dbmanager.cc dingo-processgrid.cc dingo-notification.cc dingo-playlistreader.cc dingo-playlistwriter.cc dingo-playerengine.cc dingo-settings.cc dingo-settingsreader.cc dingo-settingswriter.cc dingo-tagreader.cc dingo-sqlite3.cc dingo-utilities.cc dingo-toolbarobserver.cc dingo-searchentryobserver.cc dingo-audiovideofilterobserver.cc dingo-playlisttreeviewobserver.cc dingo-genretreeviewobserver.cc dingo-artisttreeviewobserver.cc dingo-yeartreeviewobserver.cc dingo-albumtreeviewobserver.cc dingo-tracktreeviewobserver.cc dingo-trackinfowindowobserver.cc dingo-trackplaylisteditwindowobserver.cc dingo-repeatmodeobserver.cc dingo-enginenavigationobserver.cc dingo-enginestatusobserver.cc dingo-settingsactionobserver.cc dingo-fullscreenobserver.cc dingo-playorderobserver.cc dingo-mousemotionobserver.cc dingo-repeattoggleobserver.cc dingo-dbmanplaylistobserver.cc dingo-dbmangenreobserver.cc dingo-dbmanartistobserver.cc dingo-dbmanyearobserver.cc dingo-dbmanalbumobserver.cc dingo-dbmantrackobserver.cc dingo-processgridobserver.cc dingo-application.h dingo-mainwindow.h dingo-mprisv2.h dingo-mpriscommon.h dingo-menubar.h dingo-toolbar.h dingo-playlisttreeview.h dingo-genretreeview.h dingo-artisttreeview.h dingo-yeartreeview.h dingo-albumtreeview.h dingo-tracktreeview.h dingo-trackinfowindow.h dingo-multipletracksinfowindow.h dingo-trackplaylisteditwindow.h dingo-videoarea.h dingo-controlbar.h dingo-statusbar.h dingo-statusicon.h dingo-aboutdialog.h dingo-hscale.h dingo-programoptions.h dingo-notification.h dingo-dbmanager.h dingo-processgrid.h dingo-playlistreader.h dingo-playlistwriter.h dingo-playerengine.h dingo-settings.h dingo-settingsreader.h dingo-settingswriter.h dingo-tagreader.h dingo-sqlite3.h dingo-utilities.h dingo-toolbarobserver.h dingo-searchentryobserver.h dingo-audiovideofilterobserver.h dingo-playlisttreeviewobserver.h dingo-genretreeviewobserver.h dingo-artisttreeviewobserver.h dingo-yeartreeviewobserver.h dingo-albumtreeviewobserver.h dingo-tracktreeviewobserver.h dingo-trackinfowindowobserver.h dingo-trackplaylisteditwindowobserver.h dingo-repeatmodeobserver.h dingo-enginenavigationobserver.h dingo-enginestatusobserver.h dingo-settingsactionobserver.h dingo-fullscreenobserver.h dingo-playorderobserver.h dingo-mousemotionobserver.h dingo-repeattoggleobserver.h dingo-dbmanplaylistobserver.h dingo-dbmangenreobserver.h dingo-dbmanartistobserver.h dingo-dbmanyearobserver.h dingo-dbmanalbumobserver.h dingo-dbmantrackobserver.h dingo-processgridobserver.h dingo-header.h
+
+AM_CPPFLAGS = $(DEPENDENCIES_CFLAGS) \
+              -lboost_program_options \
+              -DDATADIR=\"$(datadir)\" \
+              -DPKGDATADIR=\"$(pkgdatadir)\" \
+              -DDINGO_LOCALEDIR=\"$(DINGO_LOCALEDIR)\" \
+              -DGETTEXT_PACKAGE=\"$(GETTEXT_PACKAGE)\"
+              
+dingo_LDADD = $(DEPENDENCIES_LIBS) -lboost_program_options
+
+clean-local:
+	-rm -rf .deps
+
+.PHONY: clean-local

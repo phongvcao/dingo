@@ -1,0 +1,1014 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: dingo 0.5.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-12-14 11:25-0500\n"
+"PO-Revision-Date: 2012-12-14 11:51-0500\n"
+"Last-Translator: Phong V. Cao <phongvcao@phongvcao.com>\n"
+"Language-Team: Vietnamese <phongvcao@phongvcao.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../src/dingo-aboutdialog.cc:32
+msgid "Copyright © 2011-2013 Phong V. Cao"
+msgstr "Bản quyền © 2011-2013 Cao Việt Phong"
+
+#: ../src/dingo-aboutdialog.cc:34 ../data/integration/dingo.desktop.in.h:4
+msgid "A minimalist yet powerful media manager for Linux"
+msgstr "Trình quản lý nhạc nhỏ nhẹ và mạnh mẽ dành cho Linux"
+
+#: ../src/dingo-aboutdialog.cc:38
+msgid "Dingo Website"
+msgstr "Trang chủ Dingo"
+
+#: ../src/dingo-aboutdialog.cc:40
+msgid "Maintainers:"
+msgstr "Tác giả:"
+
+#: ../src/dingo-aboutdialog.cc:41
+msgid "Phong V. Cao"
+msgstr "Cao Việt Phong"
+
+#: ../src/dingo-aboutdialog.cc:42
+msgid "E-mail: phongvcao@phongvcao.com"
+msgstr "E-mail: phongvcao@phongvcao.com"
+
+#: ../src/dingo-aboutdialog.cc:45
+msgid "Custom Icon Design Team<support@customicondesign.com>"
+msgstr "Đội Custom Icon Design<support@customicondesign.com>"
+
+#: ../src/dingo-aboutdialog.cc:46
+msgid "Andreas Nilsson"
+msgstr "Andreas Nilsson"
+
+#: ../src/dingo-aboutdialog.cc:47
+msgid "Garrett LeSage"
+msgstr "Garrett LeSage"
+
+#: ../src/dingo-aboutdialog.cc:48
+msgid "Jakub Steiner"
+msgstr "Jakub Steiner"
+
+#: ../src/dingo-aboutdialog.cc:49
+msgid "K. Vishnoo Charan Reddy"
+msgstr "K. Vishnoo Charan Reddy"
+
+#: ../src/dingo-aboutdialog.cc:50
+msgid "Michael Monreal"
+msgstr "Michael Monreal"
+
+#: ../src/dingo-aboutdialog.cc:51
+msgid "Ryan Collier"
+msgstr "Ryan Collier"
+
+#: ../src/dingo-aboutdialog.cc:52
+msgid "Rhythmbox Icon Design Team"
+msgstr "Đội thiết kế biểu tượng Rhythmbox"
+
+#: ../src/dingo-aboutdialog.cc:55
+msgid "English:"
+msgstr "Tiếng Anh:"
+
+#: ../src/dingo-aboutdialog.cc:56 ../src/dingo-aboutdialog.cc:58
+msgid "Phong V. Cao<phongvcao@phongvcao.com>"
+msgstr "Cao Việt Phong<phongvcao@phongvcao.com>"
+
+#: ../src/dingo-aboutdialog.cc:57
+msgid "Vietnamese:"
+msgstr "Tiếng Việt:"
+
+#: ../src/dingo-aboutdialog.cc:59
+msgid "Khanh D. Cao<khanhcao96@gmail.com>"
+msgstr "Cao Đức Khánh<khanhcao96@gmail.com>"
+
+#: ../src/dingo-aboutdialog.cc:60
+msgid "Khoa D. Cao<khoacao96@gmail.com>"
+msgstr "Cao Đức Khoa<khoacao96@gmail.com>"
+
+#: ../src/dingo-aboutdialog.cc:63
+msgid ""
+"Copyright © 2011-2013 Phong V. Cao\n"
+"\n"
+"Dingo is free software; you can redistribute it and/or modify\n"
+"it under the terms of the GNU General Public License as published by\n"
+"the Free Software Foundation; either version 3 of the License, or\n"
+"(at your option) any later version.\n"
+"\n"
+"Dingo is distributed in the hope that it will be useful,\n"
+"but WITHOUT ANY WARRANTY; without even the implied warranty of\n"
+"MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n"
+"GNU General Public License for more details.\n"
+"\n"
+"You should have received a copy of the GNU General Public License\n"
+"along with Dingo; if not, write to the Free Software Foundation, Inc.,\n"
+"51 Franklin St, Fifth Floor, Boston, MA 02110-1301  USA"
+msgstr ""
+"Bản quyền © 2011-2013 Cao Việt Phong\n"
+"\n"
+"Dingo is free software; you can redistribute it and/or modify\n"
+"it under the terms of the GNU General Public License as published by\n"
+"the Free Software Foundation; either version 3 of the License, or\n"
+"(at your option) any later version.\n"
+"\n"
+"Dingo is distributed in the hope that it will be useful,\n"
+"but WITHOUT ANY WARRANTY; without even the implied warranty of\n"
+"MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n"
+"GNU General Public License for more details.\n"
+"\n"
+"You should have received a copy of the GNU General Public License\n"
+"along with Dingo; if not, write to the Free Software Foundation, Inc.,\n"
+"51 Franklin St, Fifth Floor, Boston, MA 02110-1301  USA"
+
+#: ../src/dingo-albumtreeview.cc:174 ../src/dingo-tracktreeview.cc:687
+msgid "Album"
+msgstr "Tập nhạc"
+
+#: ../src/dingo-albumtreeview.cc:273
+msgid "All %1 Albums"
+msgstr "Tất cả %1 tập nhạc"
+
+#: ../src/dingo-artisttreeview.cc:166 ../src/dingo-tracktreeview.cc:683
+msgid "Artist"
+msgstr "Nghệ sĩ"
+
+#: ../src/dingo-artisttreeview.cc:259
+msgid "All %1 Artists"
+msgstr "Tất cả %1 nghệ sĩ"
+
+#: ../src/dingo-controlbar.cc:51 ../src/dingo-controlbar.cc:62
+#: ../src/dingo-controlbar.cc:73 ../src/dingo-controlbar.cc:110
+#: ../src/dingo-controlbar.cc:146 ../src/dingo-controlbar.cc:155
+#: ../src/dingo-controlbar.cc:164 ../src/dingo-menubar.cc:383
+#: ../src/dingo-menubar.cc:407 ../src/dingo-menubar.cc:431
+#: ../src/dingo-menubar.cc:859 ../src/dingo-statusicon.cc:190
+#: ../src/dingo-statusicon.cc:221 ../src/dingo-statusicon.cc:252
+#: ../src/dingo-statusicon.cc:354
+msgid "Repeat Section"
+msgstr "Lặp lại phân đoạn"
+
+#: ../src/dingo-controlbar.cc:83 ../src/dingo-menubar.cc:455
+#: ../src/dingo-statusicon.cc:276
+msgid "Repeat %1 -> %2"
+msgstr "Lặp lại đoạn %1 -> %2"
+
+#: ../src/dingo-controlbar.cc:107 ../src/dingo-menubar.cc:847
+#: ../src/dingo-statusicon.cc:351
+msgid "Repeat Off"
+msgstr "Không lặp lại"
+
+#: ../src/dingo-controlbar.cc:108 ../src/dingo-menubar.cc:855
+#: ../src/dingo-statusicon.cc:352
+msgid "Repeat Single"
+msgstr "Lặp lại bài"
+
+#: ../src/dingo-controlbar.cc:109 ../src/dingo-menubar.cc:851
+#: ../src/dingo-statusicon.cc:353
+msgid "Repeat Playlist"
+msgstr "Lặp lại danh mục nhạc"
+
+#: ../src/dingo-dbmanager.cc:2641
+msgid "All Tracks"
+msgstr "Tất cả các bài"
+
+#: ../src/dingo-dbmanager.cc:2665
+msgid "All Genres"
+msgstr "Tất cả các thể loại"
+
+#: ../src/dingo-dbmanager.cc:2692
+msgid "All Artists"
+msgstr "Tất cả các nghệ sĩ"
+
+#: ../src/dingo-dbmanager.cc:2717
+msgid "All Years"
+msgstr "Tất cả các năm"
+
+#: ../src/dingo-dbmanager.cc:2744
+msgid "All Albums"
+msgstr "Tất cả các tập nhạc"
+
+#: ../src/dingo-genretreeview.cc:160 ../src/dingo-tracktreeview.cc:679
+msgid "Genre"
+msgstr "Thể loại"
+
+#: ../src/dingo-genretreeview.cc:253
+msgid "All %1 Genres"
+msgstr "Tất cả %1 thể loại"
+
+#. set program name
+#: ../src/dingo-mainwindow.cc:33 ../src/dingo-mainwindow.cc:36
+#: ../data/integration/dingo.desktop.in.h:3
+msgid "Dingo Media Manager"
+msgstr "Quản lý nhạc Dingo"
+
+#: ../src/dingo-mainwindow.cc:37 ../data/integration/dingo.desktop.in.h:1
+msgid "Dingo"
+msgstr "Dingo"
+
+#: ../src/dingo-menubar.cc:663
+msgid "Media"
+msgstr "Phương tiện"
+
+#: ../src/dingo-menubar.cc:664
+msgid "Import File(s)..."
+msgstr "Nhập tập tin..."
+
+#: ../src/dingo-menubar.cc:665
+msgid "Import Folder(s)..."
+msgstr "Nhập thư mục..."
+
+#: ../src/dingo-menubar.cc:666 ../src/dingo-playlisttreeview.cc:108
+#: ../src/dingo-trackplaylisteditwindow.cc:223
+msgid "Playlist"
+msgstr "Danh mục nhạc"
+
+#: ../src/dingo-menubar.cc:667 ../src/dingo-playlisttreeview.cc:24
+msgid "New Empty Playlist..."
+msgstr "Tạo danh mục nhạc mới..."
+
+#: ../src/dingo-menubar.cc:668 ../src/dingo-playlisttreeview.cc:25
+msgid "Import From File(s)..."
+msgstr "Nhập từ tập tin..."
+
+#: ../src/dingo-menubar.cc:670 ../src/dingo-playlisttreeview.cc:26
+msgid "Rename Selected Playlist"
+msgstr "Đổi tên danh mục nhạc"
+
+#: ../src/dingo-menubar.cc:673 ../src/dingo-playlisttreeview.cc:27
+msgid "Export To File..."
+msgstr "Xuất ra tập tin..."
+
+#: ../src/dingo-menubar.cc:675 ../src/dingo-playlisttreeview.cc:28
+msgid "Delete Selected Playlist"
+msgstr "Xóa danh mục nhạc"
+
+#: ../src/dingo-menubar.cc:678 ../src/dingo-trackinfowindow.cc:28
+msgid "Close"
+msgstr "Đóng"
+
+#: ../src/dingo-menubar.cc:679 ../src/dingo-statusicon.cc:28
+msgid "Quit"
+msgstr "Thoát"
+
+#: ../src/dingo-menubar.cc:683
+msgid "Edit"
+msgstr "Chỉnh sửa"
+
+#: ../src/dingo-menubar.cc:686 ../src/dingo-tracktreeview.cc:36
+msgid "Cut Track(s)"
+msgstr "Cắt bài"
+
+#: ../src/dingo-menubar.cc:689 ../src/dingo-tracktreeview.cc:37
+msgid "Copy Track(s)"
+msgstr "Sao chép bài"
+
+#: ../src/dingo-menubar.cc:692 ../src/dingo-tracktreeview.cc:38
+msgid "Paste Track(s)"
+msgstr "Dán bài"
+
+#: ../src/dingo-menubar.cc:695 ../src/dingo-tracktreeview.cc:34
+msgid "Add to..."
+msgstr "Thêm vào..."
+
+#: ../src/dingo-menubar.cc:698 ../src/dingo-menubar.cc:708
+#: ../src/dingo-toolbar.cc:314 ../src/dingo-tracktreeview.cc:42
+#: ../src/dingo-tracktreeview.cc:45
+msgid "Play Queue"
+msgstr "Hàng đợi phát"
+
+#: ../src/dingo-menubar.cc:701 ../src/dingo-menubar.cc:712
+#: ../src/dingo-tracktreeview.cc:43 ../src/dingo-tracktreeview.cc:48
+msgid "Playlist(s)..."
+msgstr "Danh mục nhạc..."
+
+#: ../src/dingo-menubar.cc:703 ../src/dingo-tracktreeview.cc:35
+msgid "Delete from..."
+msgstr "Xóa khỏi..."
+
+#: ../src/dingo-menubar.cc:706 ../src/dingo-tracktreeview.cc:44
+msgid "Database"
+msgstr "Cơ sở dữ liệu"
+
+#: ../src/dingo-menubar.cc:711 ../src/dingo-tracktreeview.cc:46
+msgid "Hard Drive"
+msgstr "Ổ cứng"
+
+#: ../src/dingo-menubar.cc:714 ../src/dingo-tracktreeview.cc:47
+msgid "Current Playlist"
+msgstr "Danh mục nhạc hiện thời"
+
+#: ../src/dingo-menubar.cc:717 ../src/dingo-tracktreeview.cc:39
+msgid "Edit Single Track"
+msgstr "Chỉnh sửa bài đã chọn"
+
+#: ../src/dingo-menubar.cc:720 ../src/dingo-tracktreeview.cc:40
+msgid "Edit All Selected Tracks"
+msgstr "Chỉnh sửa tất cả bài đã chọn"
+
+#: ../src/dingo-menubar.cc:723
+msgid "Settings"
+msgstr "Thiết đặt"
+
+#: ../src/dingo-menubar.cc:724
+msgid "Load from File..."
+msgstr "Nhập từ tập tin..."
+
+#: ../src/dingo-menubar.cc:725
+msgid "Save to File..."
+msgstr "Lưu vào tập tin..."
+
+#: ../src/dingo-menubar.cc:726
+msgid "Save Current as Default"
+msgstr "Lưu hiện tại thành mặc định"
+
+#: ../src/dingo-menubar.cc:727
+msgid "Restore to Default"
+msgstr "Khôi phục về mặc định"
+
+#: ../src/dingo-menubar.cc:731
+msgid "View"
+msgstr "Hiển thị"
+
+#: ../src/dingo-menubar.cc:733
+msgid "Browsers"
+msgstr "Bộ duyệt"
+
+#: ../src/dingo-menubar.cc:735
+msgid "Playlist Browser"
+msgstr "Bộ duyệt danh mục nhạc"
+
+#: ../src/dingo-menubar.cc:740
+msgid "Track Browser"
+msgstr "Bộ duyệt bài"
+
+#: ../src/dingo-menubar.cc:745
+msgid "Filters"
+msgstr "Bộ lọc"
+
+#: ../src/dingo-menubar.cc:747
+msgid "Genre Filter"
+msgstr "Bộ lọc thể loại"
+
+#: ../src/dingo-menubar.cc:752
+msgid "Artist Filter"
+msgstr "Bộ lọc nghệ sĩ"
+
+#: ../src/dingo-menubar.cc:757
+msgid "Year Filter"
+msgstr "Bộ lọc năm"
+
+#: ../src/dingo-menubar.cc:762
+msgid "Album Filter"
+msgstr "Bộ lọc tập nhạc"
+
+#: ../src/dingo-menubar.cc:767
+msgid "Columns"
+msgstr "Cột"
+
+#: ../src/dingo-menubar.cc:769
+msgid "Playback Status"
+msgstr "Trạng thái phát nhạc"
+
+#: ../src/dingo-menubar.cc:774
+msgid "Track Number"
+msgstr "Số bài"
+
+#: ../src/dingo-menubar.cc:779
+msgid "Track Title"
+msgstr "Tiêu đề"
+
+#: ../src/dingo-menubar.cc:784
+msgid "Track Genre"
+msgstr "Thể loại"
+
+#: ../src/dingo-menubar.cc:789
+msgid "Track Artist"
+msgstr "Nghệ sĩ"
+
+#: ../src/dingo-menubar.cc:794
+msgid "Track Album"
+msgstr "Tập nhạc"
+
+#: ../src/dingo-menubar.cc:799
+msgid "Track Year"
+msgstr "Năm"
+
+#: ../src/dingo-menubar.cc:804
+msgid "Track Time"
+msgstr "Thời lượng"
+
+#: ../src/dingo-menubar.cc:809
+msgid "Track Extension"
+msgstr "Đuôi"
+
+#: ../src/dingo-menubar.cc:814
+msgid "Track Quality"
+msgstr "Chất lượng"
+
+#: ../src/dingo-menubar.cc:819
+msgid "Audio Only"
+msgstr "Chỉ audio"
+
+#: ../src/dingo-menubar.cc:823
+msgid "Video Only"
+msgstr "Chỉ video"
+
+#: ../src/dingo-menubar.cc:827
+msgid "Fullscreen"
+msgstr "Toàn màn hình"
+
+#: ../src/dingo-menubar.cc:830 ../src/dingo-trackinfowindow.cc:197
+#: ../src/dingo-tracktreeview.cc:41
+msgid "Lyrics"
+msgstr "Lời"
+
+#: ../src/dingo-menubar.cc:834
+msgid "Control"
+msgstr "Điều khiển"
+
+#: ../src/dingo-menubar.cc:837 ../src/dingo-statusicon.cc:21
+msgid "Play"
+msgstr "Phát"
+
+#: ../src/dingo-menubar.cc:841 ../src/dingo-statusicon.cc:23
+msgid "Previous"
+msgstr "Bài trước"
+
+#: ../src/dingo-menubar.cc:842 ../src/dingo-statusicon.cc:22
+msgid "Next"
+msgstr "Bài sau"
+
+#: ../src/dingo-menubar.cc:844 ../src/dingo-statusicon.cc:24
+msgid "Repeat"
+msgstr "Lặp lại"
+
+#: ../src/dingo-menubar.cc:864 ../src/dingo-statusicon.cc:25
+msgid "Shuffle"
+msgstr "Tráo bài"
+
+#: ../src/dingo-menubar.cc:868
+msgid "Subtitle"
+msgstr "Phụ đề"
+
+#: ../src/dingo-menubar.cc:871
+msgid "Load File..."
+msgstr "Mở tập tin..."
+
+#: ../src/dingo-menubar.cc:873
+msgid "Unset Saved"
+msgstr "Hủy phụ đề đã lưu"
+
+#: ../src/dingo-menubar.cc:876
+msgid "Show Subtitle"
+msgstr "Hiển thị phụ đề"
+
+#: ../src/dingo-menubar.cc:878
+msgid "Choose Font"
+msgstr "Chọn phông"
+
+#: ../src/dingo-menubar.cc:882
+msgid "Help"
+msgstr "Trợ giúp"
+
+#: ../src/dingo-menubar.cc:883
+msgid "Dingo Home Page"
+msgstr "Trang chủ Dingo"
+
+#: ../src/dingo-menubar.cc:884
+msgid "Get Involved"
+msgstr "Tham gia"
+
+#: ../src/dingo-menubar.cc:885 ../src/dingo-statusicon.cc:27
+msgid "About"
+msgstr "Giới thiệu"
+
+#: ../src/dingo-menubar.cc:896
+msgid "Media Files"
+msgstr "Tập tin nhạc"
+
+#: ../src/dingo-menubar.cc:898
+msgid "Import File(s)"
+msgstr "Nhập tập tin"
+
+#: ../src/dingo-menubar.cc:900 ../src/dingo-menubar.cc:974
+#: ../src/dingo-menubar.cc:1218 ../src/dingo-menubar.cc:1261
+#: ../src/dingo-menubar.cc:1655 ../src/dingo-multipletracksinfowindow.cc:24
+#: ../src/dingo-playlisttreeview.cc:288 ../src/dingo-playlisttreeview.cc:332
+#: ../src/dingo-playlisttreeview.cc:420 ../src/dingo-playlisttreeview.cc:460
+#: ../src/dingo-trackplaylisteditwindow.cc:26
+msgid "Cancel"
+msgstr "Hủy"
+
+#: ../src/dingo-menubar.cc:901 ../src/dingo-menubar.cc:975
+#: ../src/dingo-playlisttreeview.cc:333
+msgid "Import"
+msgstr "Nhập"
+
+#: ../src/dingo-menubar.cc:970
+msgid "Folders"
+msgstr "Thư mục"
+
+#: ../src/dingo-menubar.cc:972
+msgid "Import Folder(s)"
+msgstr "Nhập thư mục"
+
+#: ../src/dingo-menubar.cc:1214
+msgid "Dingo Settings File (*.dgs)"
+msgstr "Tập tin thiết đặt Dingo (*.dgs)"
+
+#: ../src/dingo-menubar.cc:1216
+msgid "Select Settings File"
+msgstr "Chọn tập tin thiết đặt"
+
+#: ../src/dingo-menubar.cc:1219 ../src/dingo-menubar.cc:1656
+msgid "Open"
+msgstr "Mở"
+
+#: ../src/dingo-menubar.cc:1259
+msgid "Save Settings File"
+msgstr "Lưu tập tin thiết đặt"
+
+#: ../src/dingo-menubar.cc:1262 ../src/dingo-multipletracksinfowindow.cc:25
+#: ../src/dingo-trackplaylisteditwindow.cc:27
+msgid "Save"
+msgstr "Lưu"
+
+#: ../src/dingo-menubar.cc:1268
+msgid "dingo-settings.dgs"
+msgstr "thiet-dat-dingo.dgs"
+
+#: ../src/dingo-menubar.cc:1651
+msgid "Subtitle Files"
+msgstr "Tập tin phụ đề"
+
+#: ../src/dingo-menubar.cc:1653
+msgid "Open Subtitle"
+msgstr "Mở phụ đề"
+
+#: ../src/dingo-menubar.cc:1727
+msgid "Choose Subtitle Font"
+msgstr "Chọn phông phụ đề"
+
+#: ../src/dingo-multipletracksinfowindow.cc:37
+msgid "Selected Tracks Properties"
+msgstr "Thuộc tính các bài đã chọn"
+
+#: ../src/dingo-multipletracksinfowindow.cc:132
+msgid "General"
+msgstr "Tổng quan"
+
+#: ../src/dingo-multipletracksinfowindow.cc:136
+#: ../src/dingo-trackinfowindow.cc:269
+msgid "Title:"
+msgstr "Tiêu đề:"
+
+#: ../src/dingo-multipletracksinfowindow.cc:137
+#: ../src/dingo-trackinfowindow.cc:270
+msgid "Artist:"
+msgstr "Nghệ sĩ:"
+
+#: ../src/dingo-multipletracksinfowindow.cc:138
+#: ../src/dingo-trackinfowindow.cc:271
+msgid "Album:"
+msgstr "Tập nhạc:"
+
+#: ../src/dingo-multipletracksinfowindow.cc:139
+#: ../src/dingo-trackinfowindow.cc:272
+msgid "Genre:"
+msgstr "Thể loại:"
+
+#: ../src/dingo-multipletracksinfowindow.cc:140
+#: ../src/dingo-trackinfowindow.cc:273
+msgid "Track Number:"
+msgstr "Số bài:"
+
+#: ../src/dingo-multipletracksinfowindow.cc:141
+#: ../src/dingo-trackinfowindow.cc:274
+msgid "Year:"
+msgstr "Năm:"
+
+#: ../src/dingo-multipletracksinfowindow.cc:142
+msgid "Total Duration:"
+msgstr "Tổng thời lượng:"
+
+#: ../src/dingo-multipletracksinfowindow.cc:143
+msgid "Total Size:"
+msgstr "Tổng kích cỡ:"
+
+#: ../src/dingo-multipletracksinfowindow.cc:144
+#: ../src/dingo-trackinfowindow.cc:275
+msgid "Comment:"
+msgstr "Chú thích:"
+
+#: ../src/dingo-playlisttreeview.cc:215
+msgid "All %1 Tracks"
+msgstr "Tất cả %1 bài"
+
+#: ../src/dingo-playlisttreeview.cc:265
+msgid "Please enter a name for the new playlist:"
+msgstr "Vui lòng điền vào tên của danh mục nhạc mới:"
+
+#: ../src/dingo-playlisttreeview.cc:269
+msgid "New Playlist"
+msgstr "Danh mục nhạc mới"
+
+#: ../src/dingo-playlisttreeview.cc:289
+msgid "Create"
+msgstr "Tạo"
+
+#: ../src/dingo-playlisttreeview.cc:328
+msgid "Dingo Playlist Files (*.dpls)"
+msgstr "Tập tin danh mục nhạc Dingo (*.dpls)"
+
+#: ../src/dingo-playlisttreeview.cc:330
+msgid "Import Playlist"
+msgstr "Nhập danh mục nhạc"
+
+#: ../src/dingo-playlisttreeview.cc:397
+msgid "Please enter a new name for the playlist:"
+msgstr "Vui lòng điền tên mới cho danh mục nhạc:"
+
+#: ../src/dingo-playlisttreeview.cc:421
+msgid "Rename"
+msgstr "Đổi tên"
+
+#: ../src/dingo-playlisttreeview.cc:458
+msgid "Export Playlist: %1"
+msgstr "Xuất danh mục nhạc: %1"
+
+#: ../src/dingo-playlisttreeview.cc:461
+msgid "Export"
+msgstr "Xuất"
+
+#: ../src/dingo-playlisttreeview.cc:507
+msgid "Delete the selected Playlist?"
+msgstr "Xóa danh mục nhạc đã chọn?"
+
+#: ../src/dingo-playlisttreeview.cc:523 ../src/dingo-tracktreeview.cc:1061
+#: ../src/dingo-tracktreeview.cc:1171 ../src/dingo-tracktreeview.cc:1257
+#: ../src/dingo-tracktreeview.cc:1367
+msgid "No"
+msgstr "Không"
+
+#: ../src/dingo-playlisttreeview.cc:524 ../src/dingo-tracktreeview.cc:1062
+#: ../src/dingo-tracktreeview.cc:1172 ../src/dingo-tracktreeview.cc:1258
+#: ../src/dingo-tracktreeview.cc:1368
+msgid "Yes"
+msgstr "Có"
+
+#: ../src/dingo-processgrid.cc:78
+msgid "File: %1"
+msgstr "Tập tin: %1"
+
+#: ../src/dingo-processgrid.cc:90
+msgid "Importing Tracks"
+msgstr "Đang nhập bài"
+
+#: ../src/dingo-processgrid.cc:91 ../src/dingo-processgrid.cc:98
+#: ../src/dingo-processgrid.cc:105
+msgid "Importing Track %1 of %2"
+msgstr "Đang nhập bài thứ %1 trên %2 bài"
+
+#: ../src/dingo-processgrid.cc:97
+msgid "Importing Folders"
+msgstr "Đang nhập thư mục"
+
+#: ../src/dingo-processgrid.cc:104
+msgid "Importing Playlists"
+msgstr "Đang nhập danh mục nhạc"
+
+#: ../src/dingo-processgrid.cc:111
+msgid "Exporting Playlist"
+msgstr "Đang xuất danh mục nhạc"
+
+#: ../src/dingo-processgrid.cc:112
+msgid "Exporting Track %1 of %2"
+msgstr "Đang xuất bài thứ %1 trên %2 bài"
+
+#: ../src/dingo-processgrid.cc:118
+msgid "Cutting Track(s)"
+msgstr "Đang cắt bài"
+
+#: ../src/dingo-processgrid.cc:119
+msgid "Cutting Track %1 of %2"
+msgstr "Đang cắt bài thứ %1 trên %2 bài"
+
+#: ../src/dingo-processgrid.cc:125
+msgid "Copying Track(s)"
+msgstr "Đang sao chép bài"
+
+#: ../src/dingo-processgrid.cc:126
+msgid "Copying Track %1 of %2"
+msgstr "Đang sao chép bài thứ %1 trên %2 bài"
+
+#: ../src/dingo-processgrid.cc:132
+msgid "Pasting Track(s)"
+msgstr "Đang dán bài"
+
+#: ../src/dingo-processgrid.cc:133
+msgid "Pasting Track %1 of %2"
+msgstr "Đang dán bài thứ %1 trên %2 bài"
+
+#: ../src/dingo-processgrid.cc:139
+msgid "Adding Track(s) to Play Queue"
+msgstr "Đang thêm bài vào hàng chờ phát"
+
+#: ../src/dingo-processgrid.cc:140 ../src/dingo-processgrid.cc:147
+msgid "Adding Track %1 of %2"
+msgstr "Đang thêm bài thứ %1 trên %2 bài"
+
+#: ../src/dingo-processgrid.cc:146
+msgid "Adding Track(s) to Playlists"
+msgstr "Đang thêm bài vào danh mục nhạc"
+
+#: ../src/dingo-processgrid.cc:153
+msgid "Removing Track(s) from Database"
+msgstr "Đang xóa bài khỏi cơ sở dữ liệu"
+
+#: ../src/dingo-processgrid.cc:154 ../src/dingo-processgrid.cc:161
+#: ../src/dingo-processgrid.cc:175 ../src/dingo-processgrid.cc:183
+msgid "Removing Track %1 of %2"
+msgstr "Đang xóa bài thứ %1 trên %2 bài"
+
+#: ../src/dingo-processgrid.cc:160
+msgid "Removing Track(s) from Play Queue"
+msgstr "Đang xóa bài khỏi hàng chờ phát"
+
+#: ../src/dingo-processgrid.cc:167
+msgid "Deleting Track(s) from Hard Drive"
+msgstr "Đang xóa bài khỏi ổ cứng"
+
+#: ../src/dingo-processgrid.cc:168
+msgid "Deleting Track %1 of %2"
+msgstr "Đang xóa bài thứ %1 trên %2 bài"
+
+#: ../src/dingo-processgrid.cc:174
+msgid "Removing Track(s) from Playlists"
+msgstr "Đang xóa bài khỏi danh mục nhạc"
+
+#: ../src/dingo-processgrid.cc:181
+msgid "Removing Track(s) from Current Playlist"
+msgstr "Đang xóa bài khỏi danh mục nhạc hiện tại"
+
+#: ../src/dingo-processgrid.cc:189
+msgid "Saving Track's Info"
+msgstr "Đang lưu thông tin bài"
+
+#: ../src/dingo-processgrid.cc:190 ../src/dingo-processgrid.cc:197
+msgid "Saving Info Track %1 of %2"
+msgstr "Đang lưu thông tin bài thứ %1 trên %2 bài"
+
+#: ../src/dingo-processgrid.cc:196
+msgid "Saving Tracks' Info"
+msgstr "Đang lưu thông tin các bài"
+
+#: ../src/dingo-processgrid.cc:203
+msgid "Loading Settings from File"
+msgstr "Đang tải thiết đặt từ tập tin"
+
+#: ../src/dingo-processgrid.cc:204
+msgid "Loading Setting %1 of %2"
+msgstr "Đang tải thiết đặt thứ %1 trên %2 thiết đặt"
+
+#: ../src/dingo-processgrid.cc:210
+msgid "Saving Settings to File"
+msgstr "Đang lưu thiết đặt vào tập tin"
+
+#: ../src/dingo-processgrid.cc:211 ../src/dingo-processgrid.cc:218
+msgid "Saving Setting %1 of %2"
+msgstr "Đang lưu thiết đặt thứ %1 trên %2 thiết đặt"
+
+#: ../src/dingo-processgrid.cc:217
+msgid "Saving Current Settings as Default"
+msgstr "Đang lưu thiết đặt hiện thời làm mặc định"
+
+#: ../src/dingo-processgrid.cc:224
+msgid "Restoring to Default Settings"
+msgstr "Đang khôi phục thiết đặt mặc định"
+
+#: ../src/dingo-processgrid.cc:225
+msgid "Restoring Setting %1 of %2"
+msgstr "Đang khôi phục thiết đặt thứ %1 trên %2 thiết đặt"
+
+#: ../src/dingo-statusicon.cc:26
+msgid "Show Main Window"
+msgstr "Hiện cửa sổ chính"
+
+#: ../src/dingo-statusicon.cc:319 ../src/dingo-toolbar.cc:245
+msgid "by %1 from %2"
+msgstr "bởi %1 từ %2"
+
+#: ../src/dingo-statusicon.cc:328 ../src/dingo-statusicon.cc:405
+#: ../src/dingo-toolbar.cc:249 ../src/dingo-toolbar.cc:271
+msgid "Not Playing"
+msgstr "Không phát"
+
+#: ../src/dingo-toolbar.cc:312
+msgid "Home"
+msgstr "Trang chủ"
+
+#: ../src/dingo-toolbar.cc:313
+msgid "Now Playing"
+msgstr "Đang phát"
+
+#: ../src/dingo-toolbar.cc:315
+msgid "View Audio Only"
+msgstr "Chỉ hiện audio"
+
+#: ../src/dingo-toolbar.cc:316
+msgid "View Video Only"
+msgstr "Chỉ hiện video"
+
+#: ../src/dingo-toolbar.cc:349
+msgid "Search..."
+msgstr "Tìm kiếm..."
+
+#: ../src/dingo-trackinfowindow.cc:26
+msgid "Back"
+msgstr "Bài trước"
+
+#: ../src/dingo-trackinfowindow.cc:27
+msgid "Forward"
+msgstr "Bài sau"
+
+#: ../src/dingo-trackinfowindow.cc:104
+msgid "%1 Properties"
+msgstr "Thuộc tính của %1"
+
+#: ../src/dingo-trackinfowindow.cc:195
+msgid "Basic"
+msgstr "Cơ bản"
+
+#: ../src/dingo-trackinfowindow.cc:196
+msgid "Details"
+msgstr "Chi tiết"
+
+#: ../src/dingo-trackinfowindow.cc:214
+msgid "File Name:"
+msgstr "Tên tập tin:"
+
+#: ../src/dingo-trackinfowindow.cc:215
+msgid "Duration:"
+msgstr "Thời lượng:"
+
+#: ../src/dingo-trackinfowindow.cc:216
+msgid "Bitrate:"
+msgstr "Tốc độ bít:"
+
+#: ../src/dingo-trackinfowindow.cc:217
+msgid "Location:"
+msgstr "Vị trí:"
+
+#: ../src/dingo-trackinfowindow.cc:218
+msgid "Subtitle:"
+msgstr "Phụ đề:"
+
+#: ../src/dingo-trackinfowindow.cc:219
+msgid "File Size:"
+msgstr "Kích cỡ:"
+
+#: ../src/dingo-trackinfowindow.cc:220
+msgid "Date Added:"
+msgstr "Ngày thêm vào:"
+
+#: ../src/dingo-trackplaylisteditwindow.cc:25
+msgid ""
+"Please check or uncheck the checkboxes to add or delete tracks to/from "
+"playlists:"
+msgstr ""
+"Vui lòng chọn hoặc bỏ chọn các ô chọn để thêm vào hoặc xóa bỏ bài từ "
+"danh mục nhạc:"
+
+#: ../src/dingo-trackplaylisteditwindow.cc:30
+#: ../src/dingo-trackplaylisteditwindow.cc:354
+#: ../src/dingo-trackplaylisteditwindow.cc:398
+msgid "Tracks to be added to this playlist:"
+msgstr "Các bài sắp được thêm vào danh mục nhạc này:"
+
+#: ../src/dingo-trackplaylisteditwindow.cc:38
+msgid "Manage Tracks' Membership"
+msgstr "Quản lý danh mục bài hát"
+
+#: ../src/dingo-trackplaylisteditwindow.cc:154
+#: ../src/dingo-trackplaylisteditwindow.cc:165
+#: ../src/dingo-trackplaylisteditwindow.cc:176
+#: ../src/dingo-trackplaylisteditwindow.cc:415
+#: ../src/dingo-trackplaylisteditwindow.cc:419
+msgid "Tracks in this Playlist:"
+msgstr "Các bài đã có trong danh mục nhạc này:"
+
+#: ../src/dingo-trackplaylisteditwindow.cc:165
+#: ../src/dingo-trackplaylisteditwindow.cc:419
+msgid "None"
+msgstr "Không có"
+
+#: ../src/dingo-trackplaylisteditwindow.cc:220
+msgid "Toggle"
+msgstr "Chọn"
+
+#: ../src/dingo-trackplaylisteditwindow.cc:226
+msgid "Changes"
+msgstr "Thay đổi"
+
+#: ../src/dingo-trackplaylisteditwindow.cc:297
+msgid "Search Playlists..."
+msgstr "Tìm kiếm danh mục nhạc..."
+
+#: ../src/dingo-trackplaylisteditwindow.cc:370
+#: ../src/dingo-trackplaylisteditwindow.cc:384
+msgid "Tracks to be deleted from this playlist:"
+msgstr "Các bài sắp bị xóa khỏi danh mục nhạc này:"
+
+#: ../src/dingo-tracktreeview.cc:667
+msgid "Status"
+msgstr "Trạng thái"
+
+#: ../src/dingo-tracktreeview.cc:671
+msgid "Track"
+msgstr "Số bài"
+
+#: ../src/dingo-tracktreeview.cc:675
+msgid "Title"
+msgstr "Tiêu đề"
+
+#: ../src/dingo-tracktreeview.cc:691 ../src/dingo-yeartreeview.cc:168
+msgid "Year"
+msgstr "Năm"
+
+#: ../src/dingo-tracktreeview.cc:695
+msgid "Time"
+msgstr "Thời lượng"
+
+#: ../src/dingo-tracktreeview.cc:699
+msgid "Ext."
+msgstr "Đuôi"
+
+#: ../src/dingo-tracktreeview.cc:703
+msgid "Quality"
+msgstr "Chất lượng"
+
+#: ../src/dingo-tracktreeview.cc:1045
+msgid "Remove selected track(s) from the Database?"
+msgstr "Xóa các bài đã chọn khỏi cơ sở dữ liệu?"
+
+#: ../src/dingo-tracktreeview.cc:1155
+msgid "Remove selected track(s) from Play Queue?"
+msgstr "Xóa các bài đã chọn khỏi hàng đợi phát?"
+
+#: ../src/dingo-tracktreeview.cc:1241
+msgid "Delete selected track(s) from Hard Drive?"
+msgstr "Xóa các bài đã chọn khỏi ổ cứng?"
+
+#: ../src/dingo-tracktreeview.cc:1351
+msgid "Remove selected track(s) from Current Playlist?"
+msgstr "Xóa các bài đã chọn khỏi danh mục nhạc hiện tại?"
+
+#: ../src/dingo-utilities.cc:24
+msgid "%1 tracks"
+msgstr "%1 bài"
+
+#: ../src/dingo-utilities.cc:46
+msgid "%1 years "
+msgstr "%1 năm "
+
+#: ../src/dingo-utilities.cc:46
+msgid "%1 year "
+msgstr "%1 năm "
+
+#: ../src/dingo-utilities.cc:50
+msgid "%1 days "
+msgstr "%1 ngày "
+
+#: ../src/dingo-utilities.cc:50
+msgid "%1 day "
+msgstr "%1 ngày "
+
+#: ../src/dingo-utilities.cc:54
+msgid "%1 hours "
+msgstr "%1 tiếng "
+
+#: ../src/dingo-utilities.cc:54
+msgid "%1 hour "
+msgstr "%1 tiếng "
+
+#: ../src/dingo-utilities.cc:57
+msgid "%1 min "
+msgstr "%1 phút "
+
+#: ../src/dingo-utilities.cc:59
+msgid "%1 sec"
+msgstr "%1 giây"
+
+#: ../src/dingo-yeartreeview.cc:261
+msgid "All %1 Years"
+msgstr "Tất cả %1 năm"
+
+#: ../data/integration/dingo.desktop.in.h:2
+msgid "Media Manager"
+msgstr "Quản lý nhạc"

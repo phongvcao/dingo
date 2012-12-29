@@ -1,0 +1,56 @@
+=======================================================================================
+Dingo 0.5.0 - 2012-12-14
+---------------------------------------------------------------------------------------
+Tasks to be done in next releases
+=======================================================================================
+
+
+1. Dingo 0.5.0 - 2013:
+----------------------
+
+    - Create RPMs for Fedora 32 bit & 64 bit 
+      Create DEBs for Ubuntu 32 bit & 64 bit (also change icons)
+      Create DEBs for Linux Mint 32 bit & 64 bit (also change icons)
+      Create RPMs for OpenSUSE 32 bit & 64 bit (also change icons)
+      
+    - Create http://dingo.phongvcao.com/
+    
+    - Vietnamese translation for command line options
+    
+    - set_modal() & set_transient_for() dialogs
+    
+    - Put copyright notice on top of all *.cc and *.h files
+    
+    - Update .pot file
+
+
+2. Dingo 0.5.1 - 2013:
+----------------------
+
+    - Fix video pause - picture loss Error Gst::XOverlay - Email 
+      gstreamermm-list
+
+    - All Gtk::Menus use UI-Manager
+
+    - Finish up Dingo::ProcessGrid
+      (Add Importing Genres & Importing other kinds of tags)
+
+
+4. Dingo 0.6.0 - 2014:
+----------------------
+   
+    - Smart Playlist
+    
+    - Separate Settings Dialog
+    
+    - History submenu -> Clear Cache
+
+    - Drag N' Drop tracks to playlists
+
+    - Implement extra playlist-import format support
+
+    - Dingo::Settings save more settings
+
+    - Glib::Thread support
+
+    - Right click context menu for Dingo::TrackPlaylistEditWindow
