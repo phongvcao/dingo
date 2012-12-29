@@ -10,7 +10,7 @@
  *
  * This program is distributed in the hope that it will be useful,
  * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
  * GNU General Public License for more details.
  *
  * You should have received a copy of the GNU General Public License
@@ -58,7 +58,6 @@ Dingo::TrackPlaylistEditWindow::TrackPlaylistEditWindow(Dingo::DBManager* dbmana
   set_default_size(645, 445);
   set_title(_("Manage Tracks' Membership"));
   set_deletable(false);
-  set_transient_for(*(d_dbmanager->getWindow()));
   set_position(Gtk::WIN_POS_CENTER_ON_PARENT);
   
   add(top_vbox);

@@ -12,12 +12,14 @@ Inc.
 Dependencies
 ============
 - gtkmm 		>= 3.4.0
-- gstreamermm	 	>= 0.10.9
+- gstreamermm	 	>= 0.10.10
 - libmediainfo		>= 0.7.61   (Recommended)
 - sqlite 		>= 3.7.11
 - libxml++-2.6		>= 2.34.2   (Recommended)
 - gettext		>= 0.18.1.1 (Recommended)
 - intltool		>= 0.50.2   (Recommended)
+- libnotify             >= 0.7.5
+- boost-program-options >= 1.48
 
 Basic Installation
 ==================

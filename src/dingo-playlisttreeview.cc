@@ -10,7 +10,7 @@
  *
  * This program is distributed in the hope that it will be useful,
  * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
  * GNU General Public License for more details.
  *
  * You should have received a copy of the GNU General Public License
@@ -321,6 +321,8 @@ void Dingo::PlaylistTreeView::onNewPlaylistActivated() {
   
   dialog.show_all_children();
   
+  dialog.set_transient_for(*(d_dbmanager->getWindow()));
+  
   int result = dialog.run();
   
   dialog.hide();
@@ -453,6 +455,8 @@ void Dingo::PlaylistTreeView::onRenamePlaylistActivated() {
   
   dialog.show_all_children();
   
+  dialog.set_transient_for(*(d_dbmanager->getWindow()));
+  
   int result = dialog.run();
   
   dialog.hide();
@@ -555,6 +559,8 @@ void Dingo::PlaylistTreeView::onDeletePlaylistActivated() {
   dialog.set_default_response(Gtk::RESPONSE_OK);
   
   dialog.show_all_children();
+  
+  dialog.set_transient_for(*(d_dbmanager->getWindow()));
   
   int result = dialog.run();
   

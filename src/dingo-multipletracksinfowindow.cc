@@ -10,7 +10,7 @@
  *
  * This program is distributed in the hope that it will be useful,
  * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
  * GNU General Public License for more details.
  *
  * You should have received a copy of the GNU General Public License
@@ -57,7 +57,6 @@ Dingo::MultipleTracksInfoWindow::MultipleTracksInfoWindow(Dingo::DBManager* dbma
   set_size_request(390, 470);
   set_default_size(390, 520);
   set_title(_("Selected Tracks Properties"));
-  set_transient_for(*(d_dbmanager->getWindow()));
   set_position(Gtk::WIN_POS_CENTER_ON_PARENT);
   
   set_deletable(false);

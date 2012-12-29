@@ -10,7 +10,7 @@
  *
  * This program is distributed in the hope that it will be useful,
  * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
  * GNU General Public License for more details.
  *
  * You should have received a copy of the GNU General Public License
@@ -23,11 +23,11 @@
 #include <libintl.h>
 
 int main(int argc, char** argv) {
-  Dingo::Application dingo_application(argc, argv);
-  
   bindtextdomain(GETTEXT_PACKAGE, DINGO_LOCALEDIR);
   bind_textdomain_codeset(GETTEXT_PACKAGE, "UTF-8");
   textdomain(GETTEXT_PACKAGE);
+  
+  Dingo::Application dingo_application(argc, argv);
   
   return dingo_application.run();
 }

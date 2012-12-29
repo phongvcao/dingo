@@ -10,7 +10,7 @@
  *
  * This program is distributed in the hope that it will be useful,
  * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
  * GNU General Public License for more details.
  *
  * You should have received a copy of the GNU General Public License
@@ -33,6 +33,11 @@
 #include <boost/program_options.hpp>
 #endif //INCLUDED_BOOST_PROGRAM_OPTIONS_HPP
 
+#ifndef INCLUDED_GLIBMM_I18N_H
+#define INCLUDED_GLIBMM_I18N_H
+#include <glibmm/i18n.h>
+#endif //INCLUDED_GLIBMM_I18N_H
+
 #ifndef INCLUDED_IOSTREAM
 #define INCLUDED_IOSTREAM
 #include <iostream>
@@ -42,11 +47,11 @@
 Dingo::ProgramOptions::ProgramOptions(int& argc, char**& argv) {
   d_should_dingo_quit = false;
 
-  boost::program_options::options_description desc("Help Options");
+  boost::program_options::options_description desc(_("Help Options"));
   
   desc.add_options()
-    ("help,h", "Show this help")
-    ("version,v", "Show version information");
+    ("help,h", _("Show this help"))
+    ("version,v", _("Show version information"));
     
   boost::program_options::variables_map cmd_variables_map;
   
@@ -55,8 +60,8 @@ Dingo::ProgramOptions::ProgramOptions(int& argc, char**& argv) {
   boost::program_options::notify(cmd_variables_map);
   
   if (cmd_variables_map.count("help")) {
-    std::cout << "Usage: dingo [OPTIONS...]" << std::endl;
-    std::cout << "       dingo [FILES | FOLDERS paths]" << std::endl;
+    std::cout << _("Usage: dingo [OPTIONS...]") << std::endl;
+    std::cout << _("       dingo [FILES | FOLDERS paths]") << std::endl;
     std::cout << std::endl;
     
     std::cout << desc << std::endl;
@@ -74,8 +79,8 @@ Dingo::ProgramOptions::ProgramOptions(int& argc, char**& argv) {
   }
   
   if (cmd_variables_map.count("version")) {
-    std::cout << "Dingo 0.5 (0.5.0) http://dingo.phongvcao.com" << std::endl;
-    std::cout << "Copyright 2011-2013 Phong V. Cao and Contributors." << std::endl;
+    std::cout << "Dingo 0.5 (0.5.0) http://www.dingo-project.org" << std::endl;
+    std::cout << _("Copyright (C) 2011-2013 Phong V. Cao and Contributors") << std::endl;
     
     for (int i = 0; i < argc; ++i) {
       if ((!strcmp(argv[i], "--version")) || (!strcmp(argv[i], "-v"))) {

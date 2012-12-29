@@ -8,91 +8,91 @@ msgid ""
 msgstr ""
 "Project-Id-Version: dingo 0.5.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-12-14 11:25-0500\n"
-"PO-Revision-Date: 2012-12-14 11:29-0500\n"
+"POT-Creation-Date: 2012-12-29 01:39-0500\n"
+"PO-Revision-Date: 2012-12-29 01:45-0500\n"
 "Last-Translator: Phong V. Cao <phongvcao@phongvcao.com>\n"
 "Language-Team: Default English <phongvcao@phongvcao.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../src/dingo-aboutdialog.cc:32
+#: ../src/dingo-aboutdialog.cc:53
 msgid "Copyright © 2011-2013 Phong V. Cao"
 msgstr "Copyright © 2011-2013 Phong V. Cao"
 
-#: ../src/dingo-aboutdialog.cc:34 ../data/integration/dingo.desktop.in.h:4
+#: ../src/dingo-aboutdialog.cc:55 ../data/integration/dingo.desktop.in.h:4
 msgid "A minimalist yet powerful media manager for Linux"
 msgstr "A minimalist yet powerful media manager for Linux"
 
-#: ../src/dingo-aboutdialog.cc:38
+#: ../src/dingo-aboutdialog.cc:59
 msgid "Dingo Website"
 msgstr "Dingo Website"
 
-#: ../src/dingo-aboutdialog.cc:40
+#: ../src/dingo-aboutdialog.cc:61
 msgid "Maintainers:"
 msgstr "Maintainers:"
 
-#: ../src/dingo-aboutdialog.cc:41
+#: ../src/dingo-aboutdialog.cc:62
 msgid "Phong V. Cao"
 msgstr "Phong V. Cao"
 
-#: ../src/dingo-aboutdialog.cc:42
+#: ../src/dingo-aboutdialog.cc:63
 msgid "E-mail: phongvcao@phongvcao.com"
 msgstr "E-mail: phongvcao@phongvcao.com"
 
-#: ../src/dingo-aboutdialog.cc:45
+#: ../src/dingo-aboutdialog.cc:66
 msgid "Custom Icon Design Team<support@customicondesign.com>"
 msgstr "Custom Icon Design Team<support@customicondesign.com>"
 
-#: ../src/dingo-aboutdialog.cc:46
+#: ../src/dingo-aboutdialog.cc:67
 msgid "Andreas Nilsson"
 msgstr "Andreas Nilsson"
 
-#: ../src/dingo-aboutdialog.cc:47
+#: ../src/dingo-aboutdialog.cc:68
 msgid "Garrett LeSage"
 msgstr "Garrett LeSage"
 
-#: ../src/dingo-aboutdialog.cc:48
+#: ../src/dingo-aboutdialog.cc:69
 msgid "Jakub Steiner"
 msgstr "Jakub Steiner"
 
-#: ../src/dingo-aboutdialog.cc:49
+#: ../src/dingo-aboutdialog.cc:70
 msgid "K. Vishnoo Charan Reddy"
 msgstr "K. Vishnoo Charan Reddy"
 
-#: ../src/dingo-aboutdialog.cc:50
+#: ../src/dingo-aboutdialog.cc:71
 msgid "Michael Monreal"
 msgstr "Michael Monreal"
 
-#: ../src/dingo-aboutdialog.cc:51
+#: ../src/dingo-aboutdialog.cc:72
 msgid "Ryan Collier"
 msgstr "Ryan Collier"
 
-#: ../src/dingo-aboutdialog.cc:52
+#: ../src/dingo-aboutdialog.cc:73
 msgid "Rhythmbox Icon Design Team"
 msgstr "Rhythmbox Icon Design Team"
 
-#: ../src/dingo-aboutdialog.cc:55
+#: ../src/dingo-aboutdialog.cc:76
 msgid "English:"
 msgstr "English:"
 
-#: ../src/dingo-aboutdialog.cc:56 ../src/dingo-aboutdialog.cc:58
+#: ../src/dingo-aboutdialog.cc:77 ../src/dingo-aboutdialog.cc:79
 msgid "Phong V. Cao<phongvcao@phongvcao.com>"
 msgstr "Phong V. Cao<phongvcao@phongvcao.com>"
 
-#: ../src/dingo-aboutdialog.cc:57
+#: ../src/dingo-aboutdialog.cc:78
 msgid "Vietnamese:"
 msgstr "Vietnamese:"
 
-#: ../src/dingo-aboutdialog.cc:59
+#: ../src/dingo-aboutdialog.cc:80
 msgid "Khanh D. Cao<khanhcao96@gmail.com>"
 msgstr "Khanh D. Cao<khanhcao96@gmail.com>"
 
-#: ../src/dingo-aboutdialog.cc:60
+#: ../src/dingo-aboutdialog.cc:81
 msgid "Khoa D. Cao<khoacao96@gmail.com>"
 msgstr "Khoa D. Cao<khoacao96@gmail.com>"
 
-#: ../src/dingo-aboutdialog.cc:63
+#: ../src/dingo-aboutdialog.cc:84
 msgid ""
 "Copyright © 2011-2013 Phong V. Cao\n"
 "\n"
@@ -103,12 +103,12 @@ msgid ""
 "\n"
 "Dingo is distributed in the hope that it will be useful,\n"
 "but WITHOUT ANY WARRANTY; without even the implied warranty of\n"
-"MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n"
+"MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the\n"
 "GNU General Public License for more details.\n"
 "\n"
 "You should have received a copy of the GNU General Public License\n"
 "along with Dingo; if not, write to the Free Software Foundation, Inc.,\n"
-"51 Franklin St, Fifth Floor, Boston, MA 02110-1301  USA"
+"51 Franklin St, Fifth Floor, Boston, MA 02110-1301  USA."
 msgstr ""
 "Copyright © 2011-2013 Phong V. Cao\n"
 "\n"
@@ -119,765 +119,791 @@ msgstr ""
 "\n"
 "Dingo is distributed in the hope that it will be useful,\n"
 "but WITHOUT ANY WARRANTY; without even the implied warranty of\n"
-"MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n"
+"MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the\n"
 "GNU General Public License for more details.\n"
 "\n"
 "You should have received a copy of the GNU General Public License\n"
 "along with Dingo; if not, write to the Free Software Foundation, Inc.,\n"
-"51 Franklin St, Fifth Floor, Boston, MA 02110-1301  USA"
+"51 Franklin St, Fifth Floor, Boston, MA 02110-1301  USA."
 
-#: ../src/dingo-albumtreeview.cc:174 ../src/dingo-tracktreeview.cc:687
+#: ../src/dingo-albumtreeview.cc:195 ../src/dingo-tracktreeview.cc:717
 msgid "Album"
 msgstr "Album"
 
-#: ../src/dingo-albumtreeview.cc:273
+#: ../src/dingo-albumtreeview.cc:294
 msgid "All %1 Albums"
 msgstr "All %1 Albums"
 
-#: ../src/dingo-artisttreeview.cc:166 ../src/dingo-tracktreeview.cc:683
+#: ../src/dingo-artisttreeview.cc:187 ../src/dingo-tracktreeview.cc:713
 msgid "Artist"
 msgstr "Artist"
 
-#: ../src/dingo-artisttreeview.cc:259
+#: ../src/dingo-artisttreeview.cc:280
 msgid "All %1 Artists"
 msgstr "All %1 Artists"
 
-#: ../src/dingo-controlbar.cc:51 ../src/dingo-controlbar.cc:62
-#: ../src/dingo-controlbar.cc:73 ../src/dingo-controlbar.cc:110
-#: ../src/dingo-controlbar.cc:146 ../src/dingo-controlbar.cc:155
-#: ../src/dingo-controlbar.cc:164 ../src/dingo-menubar.cc:383
-#: ../src/dingo-menubar.cc:407 ../src/dingo-menubar.cc:431
-#: ../src/dingo-menubar.cc:859 ../src/dingo-statusicon.cc:190
-#: ../src/dingo-statusicon.cc:221 ../src/dingo-statusicon.cc:252
-#: ../src/dingo-statusicon.cc:354
+#: ../src/dingo-controlbar.cc:73 ../src/dingo-controlbar.cc:84
+#: ../src/dingo-controlbar.cc:95 ../src/dingo-controlbar.cc:132
+#: ../src/dingo-controlbar.cc:168 ../src/dingo-controlbar.cc:177
+#: ../src/dingo-controlbar.cc:186 ../src/dingo-menubar.cc:404
+#: ../src/dingo-menubar.cc:428 ../src/dingo-menubar.cc:452
+#: ../src/dingo-menubar.cc:880 ../src/dingo-statusicon.cc:227
+#: ../src/dingo-statusicon.cc:258 ../src/dingo-statusicon.cc:289
+#: ../src/dingo-statusicon.cc:391
 msgid "Repeat Section"
 msgstr "Repeat Section"
 
-#: ../src/dingo-controlbar.cc:83 ../src/dingo-menubar.cc:455
-#: ../src/dingo-statusicon.cc:276
+#: ../src/dingo-controlbar.cc:105 ../src/dingo-menubar.cc:476
+#: ../src/dingo-statusicon.cc:313
 msgid "Repeat %1 -> %2"
 msgstr "Repeat %1 -> %2"
 
-#: ../src/dingo-controlbar.cc:107 ../src/dingo-menubar.cc:847
-#: ../src/dingo-statusicon.cc:351
+#: ../src/dingo-controlbar.cc:129 ../src/dingo-menubar.cc:868
+#: ../src/dingo-statusicon.cc:388
 msgid "Repeat Off"
 msgstr "Repeat Off"
 
-#: ../src/dingo-controlbar.cc:108 ../src/dingo-menubar.cc:855
-#: ../src/dingo-statusicon.cc:352
+#: ../src/dingo-controlbar.cc:130 ../src/dingo-menubar.cc:876
+#: ../src/dingo-statusicon.cc:389
 msgid "Repeat Single"
 msgstr "Repeat Single"
 
-#: ../src/dingo-controlbar.cc:109 ../src/dingo-menubar.cc:851
-#: ../src/dingo-statusicon.cc:353
+#: ../src/dingo-controlbar.cc:131 ../src/dingo-menubar.cc:872
+#: ../src/dingo-statusicon.cc:390
 msgid "Repeat Playlist"
 msgstr "Repeat Playlist"
 
-#: ../src/dingo-dbmanager.cc:2641
+#: ../src/dingo-dbmanager.cc:2777
 msgid "All Tracks"
 msgstr "All Tracks"
 
-#: ../src/dingo-dbmanager.cc:2665
+#: ../src/dingo-dbmanager.cc:2801
 msgid "All Genres"
 msgstr "All Genres"
 
-#: ../src/dingo-dbmanager.cc:2692
+#: ../src/dingo-dbmanager.cc:2828
 msgid "All Artists"
 msgstr "All Artists"
 
-#: ../src/dingo-dbmanager.cc:2717
+#: ../src/dingo-dbmanager.cc:2853
 msgid "All Years"
 msgstr "All Years"
 
-#: ../src/dingo-dbmanager.cc:2744
+#: ../src/dingo-dbmanager.cc:2880
 msgid "All Albums"
 msgstr "All Albums"
 
-#: ../src/dingo-genretreeview.cc:160 ../src/dingo-tracktreeview.cc:679
+#: ../src/dingo-genretreeview.cc:181 ../src/dingo-tracktreeview.cc:709
 msgid "Genre"
 msgstr "Genre"
 
-#: ../src/dingo-genretreeview.cc:253
+#: ../src/dingo-genretreeview.cc:274
 msgid "All %1 Genres"
 msgstr "All %1 Genres"
 
 #. set program name
-#: ../src/dingo-mainwindow.cc:33 ../src/dingo-mainwindow.cc:36
+#: ../src/dingo-mainwindow.cc:58 ../src/dingo-mainwindow.cc:61
 #: ../data/integration/dingo.desktop.in.h:3
 msgid "Dingo Media Manager"
 msgstr "Dingo Media Manager"
 
-#: ../src/dingo-mainwindow.cc:37 ../data/integration/dingo.desktop.in.h:1
+#: ../src/dingo-mainwindow.cc:62 ../data/integration/dingo.desktop.in.h:1
 msgid "Dingo"
 msgstr "Dingo"
 
-#: ../src/dingo-menubar.cc:663
+#: ../src/dingo-menubar.cc:684
 msgid "Media"
 msgstr "Media"
 
-#: ../src/dingo-menubar.cc:664
+#: ../src/dingo-menubar.cc:685
 msgid "Import File(s)..."
 msgstr "Import File(s)..."
 
-#: ../src/dingo-menubar.cc:665
+#: ../src/dingo-menubar.cc:686
 msgid "Import Folder(s)..."
 msgstr "Import Folder(s)..."
 
-#: ../src/dingo-menubar.cc:666 ../src/dingo-playlisttreeview.cc:108
-#: ../src/dingo-trackplaylisteditwindow.cc:223
+#: ../src/dingo-menubar.cc:687 ../src/dingo-playlisttreeview.cc:131
+#: ../src/dingo-trackplaylisteditwindow.cc:243
 msgid "Playlist"
 msgstr "Playlist"
 
-#: ../src/dingo-menubar.cc:667 ../src/dingo-playlisttreeview.cc:24
+#: ../src/dingo-menubar.cc:688 ../src/dingo-playlisttreeview.cc:46
 msgid "New Empty Playlist..."
 msgstr "New Empty Playlist..."
 
-#: ../src/dingo-menubar.cc:668 ../src/dingo-playlisttreeview.cc:25
+#: ../src/dingo-menubar.cc:689 ../src/dingo-playlisttreeview.cc:47
 msgid "Import From File(s)..."
 msgstr "Import From File(s)..."
 
-#: ../src/dingo-menubar.cc:670 ../src/dingo-playlisttreeview.cc:26
+#: ../src/dingo-menubar.cc:691 ../src/dingo-playlisttreeview.cc:48
 msgid "Rename Selected Playlist"
 msgstr "Rename Selected Playlist"
 
-#: ../src/dingo-menubar.cc:673 ../src/dingo-playlisttreeview.cc:27
+#: ../src/dingo-menubar.cc:694 ../src/dingo-playlisttreeview.cc:49
 msgid "Export To File..."
 msgstr "Export To File..."
 
-#: ../src/dingo-menubar.cc:675 ../src/dingo-playlisttreeview.cc:28
+#: ../src/dingo-menubar.cc:696 ../src/dingo-playlisttreeview.cc:50
 msgid "Delete Selected Playlist"
 msgstr "Delete Selected Playlist"
 
-#: ../src/dingo-menubar.cc:678 ../src/dingo-trackinfowindow.cc:28
+#: ../src/dingo-menubar.cc:699 ../src/dingo-trackinfowindow.cc:50
 msgid "Close"
 msgstr "Close"
 
-#: ../src/dingo-menubar.cc:679 ../src/dingo-statusicon.cc:28
+#: ../src/dingo-menubar.cc:700 ../src/dingo-statusicon.cc:49
 msgid "Quit"
 msgstr "Quit"
 
-#: ../src/dingo-menubar.cc:683
+#: ../src/dingo-menubar.cc:704
 msgid "Edit"
 msgstr "Edit"
 
-#: ../src/dingo-menubar.cc:686 ../src/dingo-tracktreeview.cc:36
+#: ../src/dingo-menubar.cc:707 ../src/dingo-tracktreeview.cc:58
 msgid "Cut Track(s)"
 msgstr "Cut Track(s)"
 
-#: ../src/dingo-menubar.cc:689 ../src/dingo-tracktreeview.cc:37
+#: ../src/dingo-menubar.cc:710 ../src/dingo-tracktreeview.cc:59
 msgid "Copy Track(s)"
 msgstr "Copy Track(s)"
 
-#: ../src/dingo-menubar.cc:692 ../src/dingo-tracktreeview.cc:38
+#: ../src/dingo-menubar.cc:713 ../src/dingo-tracktreeview.cc:60
 msgid "Paste Track(s)"
 msgstr "Paste Track(s)"
 
-#: ../src/dingo-menubar.cc:695 ../src/dingo-tracktreeview.cc:34
+#: ../src/dingo-menubar.cc:716 ../src/dingo-tracktreeview.cc:56
 msgid "Add to..."
 msgstr "Add to..."
 
-#: ../src/dingo-menubar.cc:698 ../src/dingo-menubar.cc:708
-#: ../src/dingo-toolbar.cc:314 ../src/dingo-tracktreeview.cc:42
-#: ../src/dingo-tracktreeview.cc:45
+#: ../src/dingo-menubar.cc:719 ../src/dingo-menubar.cc:729
+#: ../src/dingo-toolbar.cc:340 ../src/dingo-tracktreeview.cc:64
+#: ../src/dingo-tracktreeview.cc:67
 msgid "Play Queue"
 msgstr "Play Queue"
 
-#: ../src/dingo-menubar.cc:701 ../src/dingo-menubar.cc:712
-#: ../src/dingo-tracktreeview.cc:43 ../src/dingo-tracktreeview.cc:48
+#: ../src/dingo-menubar.cc:722 ../src/dingo-menubar.cc:733
+#: ../src/dingo-tracktreeview.cc:65 ../src/dingo-tracktreeview.cc:70
 msgid "Playlist(s)..."
 msgstr "Playlist(s)..."
 
-#: ../src/dingo-menubar.cc:703 ../src/dingo-tracktreeview.cc:35
+#: ../src/dingo-menubar.cc:724 ../src/dingo-tracktreeview.cc:57
 msgid "Delete from..."
 msgstr "Delete from..."
 
-#: ../src/dingo-menubar.cc:706 ../src/dingo-tracktreeview.cc:44
+#: ../src/dingo-menubar.cc:727 ../src/dingo-tracktreeview.cc:66
 msgid "Database"
 msgstr "Database"
 
-#: ../src/dingo-menubar.cc:711 ../src/dingo-tracktreeview.cc:46
+#: ../src/dingo-menubar.cc:732 ../src/dingo-tracktreeview.cc:68
 msgid "Hard Drive"
 msgstr "Hard Drive"
 
-#: ../src/dingo-menubar.cc:714 ../src/dingo-tracktreeview.cc:47
+#: ../src/dingo-menubar.cc:735 ../src/dingo-tracktreeview.cc:69
 msgid "Current Playlist"
 msgstr "Current Playlist"
 
-#: ../src/dingo-menubar.cc:717 ../src/dingo-tracktreeview.cc:39
+#: ../src/dingo-menubar.cc:738 ../src/dingo-tracktreeview.cc:61
 msgid "Edit Single Track"
 msgstr "Edit Single Track"
 
-#: ../src/dingo-menubar.cc:720 ../src/dingo-tracktreeview.cc:40
+#: ../src/dingo-menubar.cc:741 ../src/dingo-tracktreeview.cc:62
 msgid "Edit All Selected Tracks"
 msgstr "Edit All Selected Tracks"
 
-#: ../src/dingo-menubar.cc:723
+#: ../src/dingo-menubar.cc:744
 msgid "Settings"
 msgstr "Settings"
 
-#: ../src/dingo-menubar.cc:724
+#: ../src/dingo-menubar.cc:745
 msgid "Load from File..."
 msgstr "Load from File..."
 
-#: ../src/dingo-menubar.cc:725
+#: ../src/dingo-menubar.cc:746
 msgid "Save to File..."
 msgstr "Save to File..."
 
-#: ../src/dingo-menubar.cc:726
+#: ../src/dingo-menubar.cc:747
 msgid "Save Current as Default"
 msgstr "Save Current as Default"
 
-#: ../src/dingo-menubar.cc:727
+#: ../src/dingo-menubar.cc:748
 msgid "Restore to Default"
 msgstr "Restore to Default"
 
-#: ../src/dingo-menubar.cc:731
+#: ../src/dingo-menubar.cc:752
 msgid "View"
 msgstr "View"
 
-#: ../src/dingo-menubar.cc:733
+#: ../src/dingo-menubar.cc:754
 msgid "Browsers"
 msgstr "Browsers"
 
-#: ../src/dingo-menubar.cc:735
+#: ../src/dingo-menubar.cc:756
 msgid "Playlist Browser"
 msgstr "Playlist Browser"
 
-#: ../src/dingo-menubar.cc:740
+#: ../src/dingo-menubar.cc:761
 msgid "Track Browser"
 msgstr "Track Browser"
 
-#: ../src/dingo-menubar.cc:745
+#: ../src/dingo-menubar.cc:766
 msgid "Filters"
 msgstr "Filters"
 
-#: ../src/dingo-menubar.cc:747
+#: ../src/dingo-menubar.cc:768
 msgid "Genre Filter"
 msgstr "Genre Filter"
 
-#: ../src/dingo-menubar.cc:752
+#: ../src/dingo-menubar.cc:773
 msgid "Artist Filter"
 msgstr "Artist Filter"
 
-#: ../src/dingo-menubar.cc:757
+#: ../src/dingo-menubar.cc:778
 msgid "Year Filter"
 msgstr "Year Filter"
 
-#: ../src/dingo-menubar.cc:762
+#: ../src/dingo-menubar.cc:783
 msgid "Album Filter"
 msgstr "Album Filter"
 
-#: ../src/dingo-menubar.cc:767
+#: ../src/dingo-menubar.cc:788
 msgid "Columns"
 msgstr "Columns"
 
-#: ../src/dingo-menubar.cc:769
+#: ../src/dingo-menubar.cc:790
 msgid "Playback Status"
 msgstr "Playback Status"
 
-#: ../src/dingo-menubar.cc:774
+#: ../src/dingo-menubar.cc:795
 msgid "Track Number"
 msgstr "Track Number"
 
-#: ../src/dingo-menubar.cc:779
+#: ../src/dingo-menubar.cc:800
 msgid "Track Title"
 msgstr "Track Title"
 
-#: ../src/dingo-menubar.cc:784
+#: ../src/dingo-menubar.cc:805
 msgid "Track Genre"
 msgstr "Track Genre"
 
-#: ../src/dingo-menubar.cc:789
+#: ../src/dingo-menubar.cc:810
 msgid "Track Artist"
 msgstr "Track Artist"
 
-#: ../src/dingo-menubar.cc:794
+#: ../src/dingo-menubar.cc:815
 msgid "Track Album"
 msgstr "Track Album"
 
-#: ../src/dingo-menubar.cc:799
+#: ../src/dingo-menubar.cc:820
 msgid "Track Year"
 msgstr "Track Year"
 
-#: ../src/dingo-menubar.cc:804
+#: ../src/dingo-menubar.cc:825
 msgid "Track Time"
 msgstr "Track Time"
 
-#: ../src/dingo-menubar.cc:809
+#: ../src/dingo-menubar.cc:830
 msgid "Track Extension"
 msgstr "Track Extension"
 
-#: ../src/dingo-menubar.cc:814
+#: ../src/dingo-menubar.cc:835
 msgid "Track Quality"
 msgstr "Track Quality"
 
-#: ../src/dingo-menubar.cc:819
+#: ../src/dingo-menubar.cc:840
 msgid "Audio Only"
 msgstr "Audio Only"
 
-#: ../src/dingo-menubar.cc:823
+#: ../src/dingo-menubar.cc:844
 msgid "Video Only"
 msgstr "Video Only"
 
-#: ../src/dingo-menubar.cc:827
+#: ../src/dingo-menubar.cc:848
 msgid "Fullscreen"
 msgstr "Fullscreen"
 
-#: ../src/dingo-menubar.cc:830 ../src/dingo-trackinfowindow.cc:197
-#: ../src/dingo-tracktreeview.cc:41
+#: ../src/dingo-menubar.cc:851 ../src/dingo-trackinfowindow.cc:218
+#: ../src/dingo-tracktreeview.cc:63
 msgid "Lyrics"
 msgstr "Lyrics"
 
-#: ../src/dingo-menubar.cc:834
+#: ../src/dingo-menubar.cc:855
 msgid "Control"
 msgstr "Control"
 
-#: ../src/dingo-menubar.cc:837 ../src/dingo-statusicon.cc:21
+#: ../src/dingo-menubar.cc:858 ../src/dingo-statusicon.cc:42
 msgid "Play"
 msgstr "Play"
 
-#: ../src/dingo-menubar.cc:841 ../src/dingo-statusicon.cc:23
+#: ../src/dingo-menubar.cc:862 ../src/dingo-statusicon.cc:44
 msgid "Previous"
 msgstr "Previous"
 
-#: ../src/dingo-menubar.cc:842 ../src/dingo-statusicon.cc:22
+#: ../src/dingo-menubar.cc:863 ../src/dingo-statusicon.cc:43
 msgid "Next"
 msgstr "Next"
 
-#: ../src/dingo-menubar.cc:844 ../src/dingo-statusicon.cc:24
+#: ../src/dingo-menubar.cc:865 ../src/dingo-statusicon.cc:45
 msgid "Repeat"
 msgstr "Repeat"
 
-#: ../src/dingo-menubar.cc:864 ../src/dingo-statusicon.cc:25
+#: ../src/dingo-menubar.cc:885 ../src/dingo-statusicon.cc:46
 msgid "Shuffle"
 msgstr "Shuffle"
 
-#: ../src/dingo-menubar.cc:868
+#: ../src/dingo-menubar.cc:889
 msgid "Subtitle"
 msgstr "Subtitle"
 
-#: ../src/dingo-menubar.cc:871
+#: ../src/dingo-menubar.cc:892
 msgid "Load File..."
 msgstr "Load File..."
 
-#: ../src/dingo-menubar.cc:873
+#: ../src/dingo-menubar.cc:894
 msgid "Unset Saved"
 msgstr "Unset Saved"
 
-#: ../src/dingo-menubar.cc:876
+#: ../src/dingo-menubar.cc:897
 msgid "Show Subtitle"
 msgstr "Show Subtitle"
 
-#: ../src/dingo-menubar.cc:878
+#: ../src/dingo-menubar.cc:899
 msgid "Choose Font"
 msgstr "Choose Font"
 
-#: ../src/dingo-menubar.cc:882
+#: ../src/dingo-menubar.cc:903
 msgid "Help"
 msgstr "Help"
 
-#: ../src/dingo-menubar.cc:883
+#: ../src/dingo-menubar.cc:904
 msgid "Dingo Home Page"
 msgstr "Dingo Home Page"
 
-#: ../src/dingo-menubar.cc:884
+#: ../src/dingo-menubar.cc:905
 msgid "Get Involved"
 msgstr "Get Involved"
 
-#: ../src/dingo-menubar.cc:885 ../src/dingo-statusicon.cc:27
+#: ../src/dingo-menubar.cc:906 ../src/dingo-statusicon.cc:48
 msgid "About"
 msgstr "About"
 
-#: ../src/dingo-menubar.cc:896
+#: ../src/dingo-menubar.cc:917
 msgid "Media Files"
 msgstr "Media Files"
 
-#: ../src/dingo-menubar.cc:898
+#: ../src/dingo-menubar.cc:919
 msgid "Import File(s)"
 msgstr "Import File(s)"
 
-#: ../src/dingo-menubar.cc:900 ../src/dingo-menubar.cc:974
-#: ../src/dingo-menubar.cc:1218 ../src/dingo-menubar.cc:1261
-#: ../src/dingo-menubar.cc:1655 ../src/dingo-multipletracksinfowindow.cc:24
-#: ../src/dingo-playlisttreeview.cc:288 ../src/dingo-playlisttreeview.cc:332
-#: ../src/dingo-playlisttreeview.cc:420 ../src/dingo-playlisttreeview.cc:460
-#: ../src/dingo-trackplaylisteditwindow.cc:26
+#: ../src/dingo-menubar.cc:921 ../src/dingo-menubar.cc:995
+#: ../src/dingo-menubar.cc:1228 ../src/dingo-menubar.cc:1271
+#: ../src/dingo-menubar.cc:1665 ../src/dingo-multipletracksinfowindow.cc:46
+#: ../src/dingo-playlisttreeview.cc:317 ../src/dingo-playlisttreeview.cc:363
+#: ../src/dingo-playlisttreeview.cc:451 ../src/dingo-playlisttreeview.cc:493
+#: ../src/dingo-trackplaylisteditwindow.cc:47
 msgid "Cancel"
 msgstr "Cancel"
 
-#: ../src/dingo-menubar.cc:901 ../src/dingo-menubar.cc:975
-#: ../src/dingo-playlisttreeview.cc:333
+#: ../src/dingo-menubar.cc:922 ../src/dingo-menubar.cc:996
+#: ../src/dingo-playlisttreeview.cc:364
 msgid "Import"
 msgstr "Import"
 
-#: ../src/dingo-menubar.cc:970
+#: ../src/dingo-menubar.cc:991
 msgid "Folders"
 msgstr "Folders"
 
-#: ../src/dingo-menubar.cc:972
+#: ../src/dingo-menubar.cc:993
 msgid "Import Folder(s)"
 msgstr "Import Folder(s)"
 
-#: ../src/dingo-menubar.cc:1214
+#: ../src/dingo-menubar.cc:1224
 msgid "Dingo Settings File (*.dgs)"
 msgstr "Dingo Settings File (*.dgs)"
 
-#: ../src/dingo-menubar.cc:1216
+#: ../src/dingo-menubar.cc:1226
 msgid "Select Settings File"
 msgstr "Select Settings File"
 
-#: ../src/dingo-menubar.cc:1219 ../src/dingo-menubar.cc:1656
+#: ../src/dingo-menubar.cc:1229 ../src/dingo-menubar.cc:1666
 msgid "Open"
 msgstr "Open"
 
-#: ../src/dingo-menubar.cc:1259
+#: ../src/dingo-menubar.cc:1269
 msgid "Save Settings File"
 msgstr "Save Settings File"
 
-#: ../src/dingo-menubar.cc:1262 ../src/dingo-multipletracksinfowindow.cc:25
-#: ../src/dingo-trackplaylisteditwindow.cc:27
+#: ../src/dingo-menubar.cc:1272 ../src/dingo-multipletracksinfowindow.cc:47
+#: ../src/dingo-trackplaylisteditwindow.cc:48
 msgid "Save"
 msgstr "Save"
 
-#: ../src/dingo-menubar.cc:1268
+#: ../src/dingo-menubar.cc:1278
 msgid "dingo-settings.dgs"
 msgstr "dingo-settings.dgs"
 
-#: ../src/dingo-menubar.cc:1651
+#: ../src/dingo-menubar.cc:1661
 msgid "Subtitle Files"
 msgstr "Subtitle Files"
 
-#: ../src/dingo-menubar.cc:1653
+#: ../src/dingo-menubar.cc:1663
 msgid "Open Subtitle"
 msgstr "Open Subtitle"
 
-#: ../src/dingo-menubar.cc:1727
+#: ../src/dingo-menubar.cc:1737
 msgid "Choose Subtitle Font"
 msgstr "Choose Subtitle Font"
 
-#: ../src/dingo-multipletracksinfowindow.cc:37
+#: ../src/dingo-multipletracksinfowindow.cc:59
 msgid "Selected Tracks Properties"
 msgstr "Selected Tracks Properties"
 
-#: ../src/dingo-multipletracksinfowindow.cc:132
+#: ../src/dingo-multipletracksinfowindow.cc:153
 msgid "General"
 msgstr "General"
 
-#: ../src/dingo-multipletracksinfowindow.cc:136
-#: ../src/dingo-trackinfowindow.cc:269
+#: ../src/dingo-multipletracksinfowindow.cc:157
+#: ../src/dingo-trackinfowindow.cc:290
 msgid "Title:"
 msgstr "Title:"
 
-#: ../src/dingo-multipletracksinfowindow.cc:137
-#: ../src/dingo-trackinfowindow.cc:270
+#: ../src/dingo-multipletracksinfowindow.cc:158
+#: ../src/dingo-trackinfowindow.cc:291
 msgid "Artist:"
 msgstr "Artist:"
 
-#: ../src/dingo-multipletracksinfowindow.cc:138
-#: ../src/dingo-trackinfowindow.cc:271
+#: ../src/dingo-multipletracksinfowindow.cc:159
+#: ../src/dingo-trackinfowindow.cc:292
 msgid "Album:"
 msgstr "Album:"
 
-#: ../src/dingo-multipletracksinfowindow.cc:139
-#: ../src/dingo-trackinfowindow.cc:272
+#: ../src/dingo-multipletracksinfowindow.cc:160
+#: ../src/dingo-trackinfowindow.cc:293
 msgid "Genre:"
 msgstr "Genre:"
 
-#: ../src/dingo-multipletracksinfowindow.cc:140
-#: ../src/dingo-trackinfowindow.cc:273
+#: ../src/dingo-multipletracksinfowindow.cc:161
+#: ../src/dingo-trackinfowindow.cc:294
 msgid "Track Number:"
 msgstr "Track Number:"
 
-#: ../src/dingo-multipletracksinfowindow.cc:141
-#: ../src/dingo-trackinfowindow.cc:274
+#: ../src/dingo-multipletracksinfowindow.cc:162
+#: ../src/dingo-trackinfowindow.cc:295
 msgid "Year:"
 msgstr "Year:"
 
-#: ../src/dingo-multipletracksinfowindow.cc:142
+#: ../src/dingo-multipletracksinfowindow.cc:163
 msgid "Total Duration:"
 msgstr "Total Duration:"
 
-#: ../src/dingo-multipletracksinfowindow.cc:143
+#: ../src/dingo-multipletracksinfowindow.cc:164
 msgid "Total Size:"
 msgstr "Total Size:"
 
-#: ../src/dingo-multipletracksinfowindow.cc:144
-#: ../src/dingo-trackinfowindow.cc:275
+#: ../src/dingo-multipletracksinfowindow.cc:165
+#: ../src/dingo-trackinfowindow.cc:296
 msgid "Comment:"
 msgstr "Comment:"
 
-#: ../src/dingo-playlisttreeview.cc:215
+#: ../src/dingo-playlisttreeview.cc:244
 msgid "All %1 Tracks"
 msgstr "All %1 Tracks"
 
-#: ../src/dingo-playlisttreeview.cc:265
+#: ../src/dingo-playlisttreeview.cc:294
 msgid "Please enter a name for the new playlist:"
 msgstr "Please enter a name for the new playlist:"
 
-#: ../src/dingo-playlisttreeview.cc:269
+#: ../src/dingo-playlisttreeview.cc:298
 msgid "New Playlist"
 msgstr "New Playlist"
 
-#: ../src/dingo-playlisttreeview.cc:289
+#: ../src/dingo-playlisttreeview.cc:318
 msgid "Create"
 msgstr "Create"
 
-#: ../src/dingo-playlisttreeview.cc:328
+#: ../src/dingo-playlisttreeview.cc:359
 msgid "Dingo Playlist Files (*.dpls)"
 msgstr "Dingo Playlist Files (*.dpls)"
 
-#: ../src/dingo-playlisttreeview.cc:330
+#: ../src/dingo-playlisttreeview.cc:361
 msgid "Import Playlist"
 msgstr "Import Playlist"
 
-#: ../src/dingo-playlisttreeview.cc:397
+#: ../src/dingo-playlisttreeview.cc:428
 msgid "Please enter a new name for the playlist:"
 msgstr "Please enter a new name for the playlist:"
 
-#: ../src/dingo-playlisttreeview.cc:421
+#: ../src/dingo-playlisttreeview.cc:452
 msgid "Rename"
 msgstr "Rename"
 
-#: ../src/dingo-playlisttreeview.cc:458
+#: ../src/dingo-playlisttreeview.cc:491
 msgid "Export Playlist: %1"
 msgstr "Export Playlist: %1"
 
-#: ../src/dingo-playlisttreeview.cc:461
+#: ../src/dingo-playlisttreeview.cc:494
 msgid "Export"
 msgstr "Export"
 
-#: ../src/dingo-playlisttreeview.cc:507
+#: ../src/dingo-playlisttreeview.cc:540
 msgid "Delete the selected Playlist?"
 msgstr "Delete the selected Playlist?"
 
-#: ../src/dingo-playlisttreeview.cc:523 ../src/dingo-tracktreeview.cc:1061
-#: ../src/dingo-tracktreeview.cc:1171 ../src/dingo-tracktreeview.cc:1257
-#: ../src/dingo-tracktreeview.cc:1367
+#: ../src/dingo-playlisttreeview.cc:556 ../src/dingo-tracktreeview.cc:1071
+#: ../src/dingo-tracktreeview.cc:1185 ../src/dingo-tracktreeview.cc:1273
+#: ../src/dingo-tracktreeview.cc:1387
 msgid "No"
 msgstr "No"
 
-#: ../src/dingo-playlisttreeview.cc:524 ../src/dingo-tracktreeview.cc:1062
-#: ../src/dingo-tracktreeview.cc:1172 ../src/dingo-tracktreeview.cc:1258
-#: ../src/dingo-tracktreeview.cc:1368
+#: ../src/dingo-playlisttreeview.cc:557 ../src/dingo-tracktreeview.cc:1072
+#: ../src/dingo-tracktreeview.cc:1186 ../src/dingo-tracktreeview.cc:1274
+#: ../src/dingo-tracktreeview.cc:1388
 msgid "Yes"
 msgstr "Yes"
 
-#: ../src/dingo-processgrid.cc:78
+#: ../src/dingo-processgrid.cc:99
 msgid "File: %1"
 msgstr "File: %1"
 
-#: ../src/dingo-processgrid.cc:90
+#: ../src/dingo-processgrid.cc:111
 msgid "Importing Tracks"
 msgstr "Importing Tracks"
 
-#: ../src/dingo-processgrid.cc:91 ../src/dingo-processgrid.cc:98
-#: ../src/dingo-processgrid.cc:105
+#: ../src/dingo-processgrid.cc:112 ../src/dingo-processgrid.cc:119
+#: ../src/dingo-processgrid.cc:126
 msgid "Importing Track %1 of %2"
 msgstr "Importing Track %1 of %2"
 
-#: ../src/dingo-processgrid.cc:97
+#: ../src/dingo-processgrid.cc:118
 msgid "Importing Folders"
 msgstr "Importing Folders"
 
-#: ../src/dingo-processgrid.cc:104
+#: ../src/dingo-processgrid.cc:125
 msgid "Importing Playlists"
 msgstr "Importing Playlists"
 
-#: ../src/dingo-processgrid.cc:111
+#: ../src/dingo-processgrid.cc:132
 msgid "Exporting Playlist"
 msgstr "Exporting Playlist"
 
-#: ../src/dingo-processgrid.cc:112
+#: ../src/dingo-processgrid.cc:133
 msgid "Exporting Track %1 of %2"
 msgstr "Exporting Track %1 of %2"
 
-#: ../src/dingo-processgrid.cc:118
+#: ../src/dingo-processgrid.cc:139
 msgid "Cutting Track(s)"
 msgstr "Cutting Track(s)"
 
-#: ../src/dingo-processgrid.cc:119
+#: ../src/dingo-processgrid.cc:140
 msgid "Cutting Track %1 of %2"
 msgstr "Cutting Track %1 of %2"
 
-#: ../src/dingo-processgrid.cc:125
+#: ../src/dingo-processgrid.cc:146
 msgid "Copying Track(s)"
 msgstr "Copying Track(s)"
 
-#: ../src/dingo-processgrid.cc:126
+#: ../src/dingo-processgrid.cc:147
 msgid "Copying Track %1 of %2"
 msgstr "Copying Track %1 of %2"
 
-#: ../src/dingo-processgrid.cc:132
+#: ../src/dingo-processgrid.cc:153
 msgid "Pasting Track(s)"
-msgstr "Pasting Track(s"
+msgstr "Pasting Track(s)"
 
-#: ../src/dingo-processgrid.cc:133
+#: ../src/dingo-processgrid.cc:154
 msgid "Pasting Track %1 of %2"
 msgstr "Pasting Track %1 of %2"
 
-#: ../src/dingo-processgrid.cc:139
+#: ../src/dingo-processgrid.cc:160
 msgid "Adding Track(s) to Play Queue"
 msgstr "Adding Track(s) to Play Queue"
 
-#: ../src/dingo-processgrid.cc:140 ../src/dingo-processgrid.cc:147
+#: ../src/dingo-processgrid.cc:161 ../src/dingo-processgrid.cc:168
 msgid "Adding Track %1 of %2"
 msgstr "Adding Track %1 of %2"
 
-#: ../src/dingo-processgrid.cc:146
+#: ../src/dingo-processgrid.cc:167
 msgid "Adding Track(s) to Playlists"
 msgstr "Adding Track(s) to Playlists"
 
-#: ../src/dingo-processgrid.cc:153
+#: ../src/dingo-processgrid.cc:174
 msgid "Removing Track(s) from Database"
 msgstr "Removing Track(s) from Database"
 
-#: ../src/dingo-processgrid.cc:154 ../src/dingo-processgrid.cc:161
-#: ../src/dingo-processgrid.cc:175 ../src/dingo-processgrid.cc:183
+#: ../src/dingo-processgrid.cc:175 ../src/dingo-processgrid.cc:182
+#: ../src/dingo-processgrid.cc:196 ../src/dingo-processgrid.cc:204
 msgid "Removing Track %1 of %2"
 msgstr "Removing Track %1 of %2"
 
-#: ../src/dingo-processgrid.cc:160
+#: ../src/dingo-processgrid.cc:181
 msgid "Removing Track(s) from Play Queue"
 msgstr "Removing Track(s) from Play Queue"
 
-#: ../src/dingo-processgrid.cc:167
+#: ../src/dingo-processgrid.cc:188
 msgid "Deleting Track(s) from Hard Drive"
 msgstr "Deleting Track(s) from Hard Drive"
 
-#: ../src/dingo-processgrid.cc:168
+#: ../src/dingo-processgrid.cc:189
 msgid "Deleting Track %1 of %2"
 msgstr "Deleting Track %1 of %2"
 
-#: ../src/dingo-processgrid.cc:174
+#: ../src/dingo-processgrid.cc:195
 msgid "Removing Track(s) from Playlists"
 msgstr "Removing Track(s) from Playlists"
 
-#: ../src/dingo-processgrid.cc:181
+#: ../src/dingo-processgrid.cc:202
 msgid "Removing Track(s) from Current Playlist"
 msgstr "Removing Track(s) from Current Playlist"
 
-#: ../src/dingo-processgrid.cc:189
+#: ../src/dingo-processgrid.cc:210
 msgid "Saving Track's Info"
 msgstr "Saving Track's Info"
 
-#: ../src/dingo-processgrid.cc:190 ../src/dingo-processgrid.cc:197
+#: ../src/dingo-processgrid.cc:211 ../src/dingo-processgrid.cc:218
 msgid "Saving Info Track %1 of %2"
 msgstr "Saving Info Track %1 of %2"
 
-#: ../src/dingo-processgrid.cc:196
+#: ../src/dingo-processgrid.cc:217
 msgid "Saving Tracks' Info"
 msgstr "Saving Tracks' Info"
 
-#: ../src/dingo-processgrid.cc:203
+#: ../src/dingo-processgrid.cc:224
 msgid "Loading Settings from File"
 msgstr "Loading Settings from File"
 
-#: ../src/dingo-processgrid.cc:204
+#: ../src/dingo-processgrid.cc:225
 msgid "Loading Setting %1 of %2"
 msgstr "Loading Setting %1 of %2"
 
-#: ../src/dingo-processgrid.cc:210
+#: ../src/dingo-processgrid.cc:231
 msgid "Saving Settings to File"
 msgstr "Saving Settings to File"
 
-#: ../src/dingo-processgrid.cc:211 ../src/dingo-processgrid.cc:218
+#: ../src/dingo-processgrid.cc:232 ../src/dingo-processgrid.cc:239
 msgid "Saving Setting %1 of %2"
 msgstr "Saving Setting %1 of %2"
 
-#: ../src/dingo-processgrid.cc:217
+#: ../src/dingo-processgrid.cc:238
 msgid "Saving Current Settings as Default"
 msgstr "Saving Current Settings as Default"
 
-#: ../src/dingo-processgrid.cc:224
+#: ../src/dingo-processgrid.cc:245
 msgid "Restoring to Default Settings"
 msgstr "Restoring to Default Settings"
 
-#: ../src/dingo-processgrid.cc:225
+#: ../src/dingo-processgrid.cc:246
 msgid "Restoring Setting %1 of %2"
 msgstr "Restoring Setting %1 of %2"
 
-#: ../src/dingo-statusicon.cc:26
-msgid "Show Main Window"
-msgstr "Show Main Window"
-
-#: ../src/dingo-statusicon.cc:319 ../src/dingo-toolbar.cc:245
+#: ../src/dingo-notification.cc:55 ../src/dingo-statusicon.cc:356
+#: ../src/dingo-toolbar.cc:271
 msgid "by %1 from %2"
 msgstr "by %1 from %2"
 
-#: ../src/dingo-statusicon.cc:328 ../src/dingo-statusicon.cc:405
-#: ../src/dingo-toolbar.cc:249 ../src/dingo-toolbar.cc:271
+#: ../src/dingo-notification.cc:61 ../src/dingo-statusicon.cc:365
+#: ../src/dingo-statusicon.cc:442 ../src/dingo-toolbar.cc:275
+#: ../src/dingo-toolbar.cc:297
 msgid "Not Playing"
 msgstr "Not Playing"
 
-#: ../src/dingo-toolbar.cc:312
+#: ../src/dingo-programoptions.cc:50
+msgid "Help Options"
+msgstr "Help Options"
+
+#: ../src/dingo-programoptions.cc:53
+msgid "Show this help"
+msgstr "Show this help"
+
+#: ../src/dingo-programoptions.cc:54
+msgid "Show version information"
+msgstr "Show version information"
+
+#: ../src/dingo-programoptions.cc:63
+msgid "Usage: dingo [OPTIONS...]"
+msgstr "Usage: dingo [OPTIONS...]"
+
+#: ../src/dingo-programoptions.cc:64
+msgid "       dingo [FILES | FOLDERS paths]"
+msgstr "       dingo [FILES | FOLDERS paths]"
+
+#: ../src/dingo-programoptions.cc:83
+msgid "Copyright (C) 2011-2013 Phong V. Cao and Contributors"
+msgstr "Copyright (C) 2011-2013 Phong V. Cao and Contributors"
+
+#: ../src/dingo-statusicon.cc:47
+msgid "Show Main Window"
+msgstr "Show Main Window"
+
+#: ../src/dingo-toolbar.cc:338
 msgid "Home"
 msgstr "Home"
 
-#: ../src/dingo-toolbar.cc:313
+#: ../src/dingo-toolbar.cc:339
 msgid "Now Playing"
 msgstr "Now Playing"
 
-#: ../src/dingo-toolbar.cc:315
+#: ../src/dingo-toolbar.cc:341
 msgid "View Audio Only"
 msgstr "View Audio Only"
 
-#: ../src/dingo-toolbar.cc:316
+#: ../src/dingo-toolbar.cc:342
 msgid "View Video Only"
 msgstr "View Video Only"
 
-#: ../src/dingo-toolbar.cc:349
+#: ../src/dingo-toolbar.cc:375
 msgid "Search..."
 msgstr "Search..."
 
-#: ../src/dingo-trackinfowindow.cc:26
+#: ../src/dingo-trackinfowindow.cc:48
 msgid "Back"
 msgstr "Back"
 
-#: ../src/dingo-trackinfowindow.cc:27
+#: ../src/dingo-trackinfowindow.cc:49
 msgid "Forward"
 msgstr "Forward"
 
-#: ../src/dingo-trackinfowindow.cc:104
+#: ../src/dingo-trackinfowindow.cc:125
 msgid "%1 Properties"
 msgstr "%1 Properties"
 
-#: ../src/dingo-trackinfowindow.cc:195
+#: ../src/dingo-trackinfowindow.cc:216
 msgid "Basic"
 msgstr "Basic"
 
-#: ../src/dingo-trackinfowindow.cc:196
+#: ../src/dingo-trackinfowindow.cc:217
 msgid "Details"
 msgstr "Details"
 
-#: ../src/dingo-trackinfowindow.cc:214
+#: ../src/dingo-trackinfowindow.cc:235
 msgid "File Name:"
 msgstr "File Name:"
 
-#: ../src/dingo-trackinfowindow.cc:215
+#: ../src/dingo-trackinfowindow.cc:236
 msgid "Duration:"
 msgstr "Duration:"
 
-#: ../src/dingo-trackinfowindow.cc:216
+#: ../src/dingo-trackinfowindow.cc:237
 msgid "Bitrate:"
 msgstr "Bitrate:"
 
-#: ../src/dingo-trackinfowindow.cc:217
+#: ../src/dingo-trackinfowindow.cc:238
 msgid "Location:"
 msgstr "Location:"
 
-#: ../src/dingo-trackinfowindow.cc:218
+#: ../src/dingo-trackinfowindow.cc:239
 msgid "Subtitle:"
 msgstr "Subtitle:"
 
-#: ../src/dingo-trackinfowindow.cc:219
+#: ../src/dingo-trackinfowindow.cc:240
 msgid "File Size:"
 msgstr "File Size:"
 
-#: ../src/dingo-trackinfowindow.cc:220
+#: ../src/dingo-trackinfowindow.cc:241
 msgid "Date Added:"
 msgstr "Date Added:"
 
-#: ../src/dingo-trackplaylisteditwindow.cc:25
+#: ../src/dingo-trackplaylisteditwindow.cc:46
 msgid ""
 "Please check or uncheck the checkboxes to add or delete tracks to/from "
 "playlists:"
@@ -885,127 +911,127 @@ msgstr ""
 "Please check or uncheck the checkboxes to add or delete tracks to/from "
 "playlists:"
 
-#: ../src/dingo-trackplaylisteditwindow.cc:30
-#: ../src/dingo-trackplaylisteditwindow.cc:354
-#: ../src/dingo-trackplaylisteditwindow.cc:398
+#: ../src/dingo-trackplaylisteditwindow.cc:51
+#: ../src/dingo-trackplaylisteditwindow.cc:374
+#: ../src/dingo-trackplaylisteditwindow.cc:418
 msgid "Tracks to be added to this playlist:"
 msgstr "Tracks to be added to this playlist:"
 
-#: ../src/dingo-trackplaylisteditwindow.cc:38
+#: ../src/dingo-trackplaylisteditwindow.cc:59
 msgid "Manage Tracks' Membership"
 msgstr "Manage Tracks' Membership"
 
-#: ../src/dingo-trackplaylisteditwindow.cc:154
-#: ../src/dingo-trackplaylisteditwindow.cc:165
-#: ../src/dingo-trackplaylisteditwindow.cc:176
-#: ../src/dingo-trackplaylisteditwindow.cc:415
-#: ../src/dingo-trackplaylisteditwindow.cc:419
+#: ../src/dingo-trackplaylisteditwindow.cc:174
+#: ../src/dingo-trackplaylisteditwindow.cc:185
+#: ../src/dingo-trackplaylisteditwindow.cc:196
+#: ../src/dingo-trackplaylisteditwindow.cc:435
+#: ../src/dingo-trackplaylisteditwindow.cc:439
 msgid "Tracks in this Playlist:"
 msgstr "Tracks in this Playlist:"
 
-#: ../src/dingo-trackplaylisteditwindow.cc:165
-#: ../src/dingo-trackplaylisteditwindow.cc:419
+#: ../src/dingo-trackplaylisteditwindow.cc:185
+#: ../src/dingo-trackplaylisteditwindow.cc:439
 msgid "None"
 msgstr "None"
 
-#: ../src/dingo-trackplaylisteditwindow.cc:220
+#: ../src/dingo-trackplaylisteditwindow.cc:240
 msgid "Toggle"
 msgstr "Toggle"
 
-#: ../src/dingo-trackplaylisteditwindow.cc:226
+#: ../src/dingo-trackplaylisteditwindow.cc:246
 msgid "Changes"
 msgstr "Changes"
 
-#: ../src/dingo-trackplaylisteditwindow.cc:297
+#: ../src/dingo-trackplaylisteditwindow.cc:317
 msgid "Search Playlists..."
 msgstr "Search Playlists..."
 
-#: ../src/dingo-trackplaylisteditwindow.cc:370
-#: ../src/dingo-trackplaylisteditwindow.cc:384
+#: ../src/dingo-trackplaylisteditwindow.cc:390
+#: ../src/dingo-trackplaylisteditwindow.cc:404
 msgid "Tracks to be deleted from this playlist:"
 msgstr "Tracks to be deleted from this playlist:"
 
-#: ../src/dingo-tracktreeview.cc:667
+#: ../src/dingo-tracktreeview.cc:697
 msgid "Status"
 msgstr "Status"
 
-#: ../src/dingo-tracktreeview.cc:671
+#: ../src/dingo-tracktreeview.cc:701
 msgid "Track"
 msgstr "Track"
 
-#: ../src/dingo-tracktreeview.cc:675
+#: ../src/dingo-tracktreeview.cc:705
 msgid "Title"
 msgstr "Title"
 
-#: ../src/dingo-tracktreeview.cc:691 ../src/dingo-yeartreeview.cc:168
+#: ../src/dingo-tracktreeview.cc:721 ../src/dingo-yeartreeview.cc:189
 msgid "Year"
 msgstr "Year"
 
-#: ../src/dingo-tracktreeview.cc:695
+#: ../src/dingo-tracktreeview.cc:725
 msgid "Time"
 msgstr "Time"
 
-#: ../src/dingo-tracktreeview.cc:699
+#: ../src/dingo-tracktreeview.cc:729
 msgid "Ext."
 msgstr "Ext."
 
-#: ../src/dingo-tracktreeview.cc:703
+#: ../src/dingo-tracktreeview.cc:733
 msgid "Quality"
 msgstr "Quality"
 
-#: ../src/dingo-tracktreeview.cc:1045
+#: ../src/dingo-tracktreeview.cc:1055
 msgid "Remove selected track(s) from the Database?"
 msgstr "Remove selected track(s) from the Database?"
 
-#: ../src/dingo-tracktreeview.cc:1155
+#: ../src/dingo-tracktreeview.cc:1169
 msgid "Remove selected track(s) from Play Queue?"
 msgstr "Remove selected track(s) from Play Queue?"
 
-#: ../src/dingo-tracktreeview.cc:1241
+#: ../src/dingo-tracktreeview.cc:1257
 msgid "Delete selected track(s) from Hard Drive?"
 msgstr "Delete selected track(s) from Hard Drive?"
 
-#: ../src/dingo-tracktreeview.cc:1351
+#: ../src/dingo-tracktreeview.cc:1371
 msgid "Remove selected track(s) from Current Playlist?"
 msgstr "Remove selected track(s) from Current Playlist?"
 
-#: ../src/dingo-utilities.cc:24
+#: ../src/dingo-utilities.cc:45
 msgid "%1 tracks"
 msgstr "%1 tracks"
 
-#: ../src/dingo-utilities.cc:46
+#: ../src/dingo-utilities.cc:67
 msgid "%1 years "
 msgstr "%1 years "
 
-#: ../src/dingo-utilities.cc:46
+#: ../src/dingo-utilities.cc:67
 msgid "%1 year "
 msgstr "%1 year "
 
-#: ../src/dingo-utilities.cc:50
+#: ../src/dingo-utilities.cc:71
 msgid "%1 days "
 msgstr "%1 days "
 
-#: ../src/dingo-utilities.cc:50
+#: ../src/dingo-utilities.cc:71
 msgid "%1 day "
 msgstr "%1 day "
 
-#: ../src/dingo-utilities.cc:54
+#: ../src/dingo-utilities.cc:75
 msgid "%1 hours "
 msgstr "%1 hours "
 
-#: ../src/dingo-utilities.cc:54
+#: ../src/dingo-utilities.cc:75
 msgid "%1 hour "
 msgstr "%1 hour "
 
-#: ../src/dingo-utilities.cc:57
+#: ../src/dingo-utilities.cc:78
 msgid "%1 min "
 msgstr "%1 min "
 
-#: ../src/dingo-utilities.cc:59
+#: ../src/dingo-utilities.cc:80
 msgid "%1 sec"
 msgstr "%1 sec"
 
-#: ../src/dingo-yeartreeview.cc:261
+#: ../src/dingo-yeartreeview.cc:282
 msgid "All %1 Years"
 msgstr "All %1 Years"
 

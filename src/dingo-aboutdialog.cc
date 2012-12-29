@@ -10,7 +10,7 @@
  *
  * This program is distributed in the hope that it will be useful,
  * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
  * GNU General Public License for more details.
  *
  * You should have received a copy of the GNU General Public License
@@ -54,7 +54,7 @@ void Dingo::AboutDialog::createAboutDialog() {
   
   set_comments(_("A minimalist yet powerful media manager for Linux"));
   
-  set_website("http://dingo.phongvcao.com/");
+  set_website("http://dingo-project.org/");
   
   set_website_label(_("Dingo Website"));
   
@@ -81,5 +81,5 @@ void Dingo::AboutDialog::createAboutDialog() {
   d_translators_str += _("Khoa D. Cao<khoacao96@gmail.com>");
   set_translator_credits(d_translators_str);
   
-  set_license(_("Copyright \xc2\xa9 2011-2013 Phong V. Cao\n\nDingo is free software; you can redistribute it and/or modify\nit under the terms of the GNU General Public License as published by\nthe Free Software Foundation; either version 3 of the License, or\n(at your option) any later version.\n\nDingo is distributed in the hope that it will be useful,\nbut WITHOUT ANY WARRANTY; without even the implied warranty of\nMERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\nGNU General Public License for more details.\n\nYou should have received a copy of the GNU General Public License\nalong with Dingo; if not, write to the Free Software Foundation, Inc.,\n51 Franklin St, Fifth Floor, Boston, MA 02110-1301  USA."));
+  set_license(_("Copyright \xc2\xa9 2011-2013 Phong V. Cao\n\nDingo is free software; you can redistribute it and/or modify\nit under the terms of the GNU General Public License as published by\nthe Free Software Foundation; either version 3 of the License, or\n(at your option) any later version.\n\nDingo is distributed in the hope that it will be useful,\nbut WITHOUT ANY WARRANTY; without even the implied warranty of\nMERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the\nGNU General Public License for more details.\n\nYou should have received a copy of the GNU General Public License\nalong with Dingo; if not, write to the Free Software Foundation, Inc.,\n51 Franklin St, Fifth Floor, Boston, MA 02110-1301  USA."));
 }

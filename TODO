@@ -13,16 +13,7 @@ Tasks to be done in next releases
       Create DEBs for Linux Mint 32 bit & 64 bit (also change icons)
       Create RPMs for OpenSUSE 32 bit & 64 bit (also change icons)
       
-    - Create http://dingo.phongvcao.com/
-    
-    - set_modal() & set_transient_for() dialogs
-    
-    - Vietnamese translation for command line options
-      (But first see if Rhythmbox and others have any)
-      (Yes only translate the explanation of the options, 
-      not the commands themselves)
-    
-    - Update .pot file
+    - Create http://dingo-project.org/
 
 
 2. Dingo 0.5.1 - 2013:

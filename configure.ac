@@ -1,5 +1,5 @@
 AC_PREREQ([2.64])
-AC_INIT([dingo], [0.5.0], [http://dingo.phongvcao.com/contribute/file-bugs])
+AC_INIT([dingo], [0.5.0], [http://dingo-project.org/contribute/file-bugs])
 AC_CONFIG_SRCDIR([src/dingo.cc])
 AC_CONFIG_HEADERS([config.h])
 

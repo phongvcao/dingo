@@ -10,7 +10,7 @@
  *
  * This program is distributed in the hope that it will be useful,
  * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
  * GNU General Public License for more details.
  *
  * You should have received a copy of the GNU General Public License
@@ -1160,23 +1160,13 @@ void Dingo::MenuBar::onEditPasteTracksActivated() {
 }
 
 void Dingo::MenuBar::onEditAddToSubMenuActivated() {
-  edit_add_to_play_queue->set_sensitive(true);
-
-  d_dbmanager->prepareQueryTrackInPlaylist();
-  
-  std::vector<Gtk::TreeRowReference> row_refs_vector = d_tracktreeview->getSelectionRefs();
-  
-  for (std::vector<Gtk::TreeRowReference>::iterator iter = row_refs_vector.begin(); iter != row_refs_vector.end(); ++iter) {
-    Gtk::TreeModel::Row row = *(Dingo::DBManager::trackModel->get_iter(iter->get_path()));
-    
-    if (d_dbmanager->getTrackInPlaylist(row[(*Dingo::DBManager::trackCR).trackID], 1)) {
-      edit_add_to_play_queue->set_sensitive(false);
-      
-      break;
-    }
+  if (d_dbmanager->getCurrentPlaylistID() == 1) {
+    edit_add_to_play_queue->set_sensitive(false);
   }
   
-  d_dbmanager->finalizeQueryTrackInPlaylist();
+  else {
+    edit_add_to_play_queue->set_sensitive(true);
+  }
 }
 
 void Dingo::MenuBar::onEditAddToPlayQueueActivated() {
@@ -1188,24 +1178,6 @@ void Dingo::MenuBar::onEditAddToPlaylistsActivated() {
 }
 
 void Dingo::MenuBar::onEditDeleteFromSubMenuActivated() {
-  edit_delete_from_play_queue->set_sensitive(false);
-
-  d_dbmanager->prepareQueryTrackInPlaylist();
-  
-  std::vector<Gtk::TreeRowReference> row_refs_vector = d_tracktreeview->getSelectionRefs();
-  
-  for (std::vector<Gtk::TreeRowReference>::iterator iter = row_refs_vector.begin(); iter != row_refs_vector.end(); ++iter) {
-    Gtk::TreeModel::Row row = *(Dingo::DBManager::trackModel->get_iter(iter->get_path()));
-    
-    if (d_dbmanager->getTrackInPlaylist(row[(*Dingo::DBManager::trackCR).trackID], 1)) {
-      edit_delete_from_play_queue->set_sensitive(true);
-      
-      break;
-    }
-  }
-  
-  d_dbmanager->finalizeQueryTrackInPlaylist();
-  
   if (d_dbmanager->getCurrentPlaylistID() == 0) {
     edit_delete_from_current_playlist->set_sensitive(false);
   }
@@ -1791,7 +1763,7 @@ void Dingo::MenuBar::onControlSubtitleChooseFontActivated() {
 void Dingo::MenuBar::onHelpHomePageActivated() {
   Gtk::LinkButton link_button;
   
-  link_button.set_uri("http://dingo.phongvcao.com/");
+  link_button.set_uri("http://dingo-project.org/");
   
   link_button.clicked();
 }
@@ -1799,13 +1771,15 @@ void Dingo::MenuBar::onHelpHomePageActivated() {
 void Dingo::MenuBar::onHelpGetInvolvedActivated() {
   Gtk::LinkButton link_button;
   
-  link_button.set_uri("http://dingo.phongvcao.com/");
+  link_button.set_uri("http://dingo-project.org/");
   
   link_button.clicked();
 }
 
 void Dingo::MenuBar::onHelpAboutActivated() {
   Dingo::AboutDialog about_dialog;
+  
+  about_dialog.set_transient_for(*(d_dbmanager->getWindow()));
   
   about_dialog.run();
 }

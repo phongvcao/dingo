@@ -10,7 +10,7 @@
  *
  * This program is distributed in the hope that it will be useful,
  * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
  * GNU General Public License for more details.
  *
  * You should have received a copy of the GNU General Public License
@@ -961,9 +961,11 @@ void Dingo::TrackTreeView::onEditInfoActivated() {
   
   get_selection()->select(temp_path_vector[0]);
   
+  d_trackinfowindow.setDisplayTrack(cur_edit_row_ref);
+  
   d_trackinfowindow.show_all();
   
-  d_trackinfowindow.setDisplayTrack(cur_edit_row_ref);
+  d_trackinfowindow.set_transient_for(*(d_dbmanager->getWindow()));
 }
 
 void Dingo::TrackTreeView::onEditAllInfoActivated() {
@@ -980,6 +982,8 @@ void Dingo::TrackTreeView::onEditAllInfoActivated() {
   cur_edit_row_vector.clear();
   
   d_multipleinfowindow.show_all();
+  
+  d_multipleinfowindow.set_transient_for(*(d_dbmanager->getWindow()));
 }
 
 void Dingo::TrackTreeView::onLyricsActivated() {
@@ -989,23 +993,13 @@ void Dingo::TrackTreeView::onLyricsActivated() {
 }
 
 void Dingo::TrackTreeView::onAddToSubMenuActivated() {
-  add_play_queue.set_sensitive(true);
-
-  d_dbmanager->prepareQueryTrackInPlaylist();
-  
-  std::vector<Gtk::TreeRowReference> row_refs_vector = getSelectionRefs();
-  
-  for (std::vector<Gtk::TreeRowReference>::iterator iter = row_refs_vector.begin(); iter != row_refs_vector.end(); ++iter) {
-    Gtk::TreeModel::Row row = *(Dingo::DBManager::trackModel->get_iter(iter->get_path()));
-    
-    if (d_dbmanager->getTrackInPlaylist(row[(*Dingo::DBManager::trackCR).trackID], 1)) {
-      add_play_queue.set_sensitive(false);
-      
-      break;
-    }
+  if (d_dbmanager->getCurrentPlaylistID() == 1) {
+    add_play_queue.set_sensitive(false);
   }
   
-  d_dbmanager->finalizeQueryTrackInPlaylist();
+  else {
+    add_play_queue.set_sensitive(true);
+  }
 }
 
 void Dingo::TrackTreeView::onAddToPlayQueueActivated() {
@@ -1042,27 +1036,11 @@ void Dingo::TrackTreeView::onAddToNormalPlaylistActivated() {
   d_trackplaylisteditwindow.setDisplayTracks(selected_row_ref_vector);
   
   d_trackplaylisteditwindow.show_all();
+  
+  d_trackplaylisteditwindow.set_transient_for(*(d_dbmanager->getWindow()));
 }
 
 void Dingo::TrackTreeView::onDeleteFromSubMenuActivated() {
-  delete_play_queue.set_sensitive(false);
-
-  d_dbmanager->prepareQueryTrackInPlaylist();
-  
-  std::vector<Gtk::TreeRowReference> row_refs_vector = getSelectionRefs();
-  
-  for (std::vector<Gtk::TreeRowReference>::iterator iter = row_refs_vector.begin(); iter != row_refs_vector.end(); ++iter) {
-    Gtk::TreeModel::Row row = *(Dingo::DBManager::trackModel->get_iter(iter->get_path()));
-    
-    if (d_dbmanager->getTrackInPlaylist(row[(*Dingo::DBManager::trackCR).trackID], 1)) {
-      delete_play_queue.set_sensitive(true);
-      
-      break;
-    }
-  }
-  
-  d_dbmanager->finalizeQueryTrackInPlaylist();
-  
   if (d_dbmanager->getCurrentPlaylistID() == 0) {
     delete_current_playlist.set_sensitive(false);
   }
@@ -1096,6 +1074,8 @@ void Dingo::TrackTreeView::onDeleteFromDatabaseActivated() {
   dialog.set_default_response(Gtk::RESPONSE_YES);
   
   dialog.show_all_children();
+  
+  dialog.set_transient_for(*(d_dbmanager->getWindow()));
   
   int result = dialog.run();
   
@@ -1209,6 +1189,8 @@ void Dingo::TrackTreeView::onDeleteFromPlayQueueActivated() {
   
   dialog.show_all_children();
   
+  dialog.set_transient_for(*(d_dbmanager->getWindow()));
+  
   int result = dialog.run();
   
   dialog.hide();
@@ -1294,6 +1276,8 @@ void Dingo::TrackTreeView::onDeleteFromHardDriveActivated() {
   dialog.set_default_response(Gtk::RESPONSE_YES);
   
   dialog.show_all_children();
+  
+  dialog.set_transient_for(*(d_dbmanager->getWindow()));
   
   int result = dialog.run();
   
@@ -1406,6 +1390,8 @@ void Dingo::TrackTreeView::onDeleteFromCurrentPlaylistActivated() {
   dialog.set_default_response(Gtk::RESPONSE_YES);
   
   dialog.show_all_children();
+  
+  dialog.set_transient_for(*(d_dbmanager->getWindow()));
   
   int result = dialog.run();
   
