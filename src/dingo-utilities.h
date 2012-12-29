@@ -44,9 +44,9 @@ namespace Dingo {
       //NUMERIC TO STRING
       static Glib::ustring tracksToString(int tracks_count);
       static Glib::ustring durationToString(gint64 duration, bool verbose = false);
-      static Glib::ustring durationToString(sqlite3_int64 duration);
+      static Glib::ustring durationToStringSQLite3(sqlite3_int64 duration);
       static Glib::ustring filesizeToString(gint64 filesize, bool unit_byte = true);
-      static Glib::ustring filesizeToString(sqlite3_int64 filesize, bool unit_byte = true);
+      static Glib::ustring filesizeToStringSQLite3(sqlite3_int64 filesize, bool unit_byte = true);
       static Glib::ustring intToString(int value);
       static Glib::ustring GInt64ToString(gint64 value);     
       static Glib::ustring doubleToString(double value);

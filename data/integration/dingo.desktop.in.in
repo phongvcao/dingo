@@ -8,6 +8,6 @@ _Comment=A minimalist yet powerful media manager for Linux
 Exec=dingo %U
 Icon=dingo
 Terminal=false
-Categories=GNOME;GTK;Audio;Music;Player;AudioVideo
+Categories=GNOME;GTK;Audio;Music;Player;AudioVideo;
 StartupNotify=true
 MimeType=application/x-ogg;application/ogg;audio/basic;audio/L24;audio/mp4;audio/mpeg;audio/ogg;audio/vorbis;audio/vnd.wave;video/mpeg;video/mp4;video/ogg;video/quicktime;video/webm;video/x-matroska;video/x-ms-wmv;video/x-flv;audio/x-vorbis+ogg;audio/x-scpls;audio/x-mp3;audio/x-mpeg;audio/x-mpegurl;audio/x-flac;

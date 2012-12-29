@@ -14,6 +14,12 @@ Tasks to be done in next releases
       Create RPMs for OpenSUSE 32 bit & 64 bit (also change icons)
       
     - Create http://dingo-project.org/
+    
+    - Finish translating "Choose Playlist", "All Tracks", "Play Queue"
+      in SoundMenu
+    
+    - Cross-system compability (32-bit Fedora and Ubuntu)
+    (Why icon not showing in Fedora 32-bit?)
 
 
 2. Dingo 0.5.1 - 2013:

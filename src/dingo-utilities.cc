@@ -103,7 +103,7 @@ Glib::ustring Dingo::Utilities::durationToString(gint64 duration, bool verbose) 
   return return_string;
 }
 
-Glib::ustring Dingo::Utilities::durationToString(sqlite3_int64 duration) {
+Glib::ustring Dingo::Utilities::durationToStringSQLite3(sqlite3_int64 duration) {
   int seconds, minutes, hours;
   char secondsString[3];
   std::stringstream ss;
@@ -185,7 +185,7 @@ Glib::ustring Dingo::Utilities::filesizeToString(gint64 filesize, bool is_unit_b
   return ustring;
 }
 
-Glib::ustring Dingo::Utilities::filesizeToString(sqlite3_int64 filesize, bool is_unit_byte) {
+Glib::ustring Dingo::Utilities::filesizeToStringSQLite3(sqlite3_int64 filesize, bool is_unit_byte) {
   double temp_filesize = filesize;
   std::stringstream ss;
   int unit_divider = 1024;
