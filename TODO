@@ -15,11 +15,12 @@ Tasks to be done in next releases
       
     - Create http://dingo.phongvcao.com/
     
-    - Vietnamese translation for command line options
-    
     - set_modal() & set_transient_for() dialogs
     
-    - Put copyright notice on top of all *.cc and *.h files
+    - Vietnamese translation for command line options
+      (But first see if Rhythmbox and others have any)
+      (Yes only translate the explanation of the options, 
+      not the commands themselves)
     
     - Update .pot file
 
@@ -43,7 +44,9 @@ Tasks to be done in next releases
     
     - Separate Settings Dialog
     
-    - History submenu -> Clear Cache
+    - Implement History submenu -> Clear Cache
+    
+    - Dingo::Notification can be disabled.
 
     - Drag N' Drop tracks to playlists
 
