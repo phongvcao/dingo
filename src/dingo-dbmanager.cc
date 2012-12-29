@@ -372,8 +372,8 @@ int Dingo::DBManager::getLastImportedPlaylistID() {
 std::map<int, Glib::ustring> Dingo::DBManager::getPlaylists(int max_count, bool is_reverse) {
   std::map<int, Glib::ustring> return_map;
   
-  return_map.insert(std::pair<int, Glib::ustring>(0, "All Tracks"));
-  return_map.insert(std::pair<int, Glib::ustring>(1, "Play Queue"));
+  return_map.insert(std::pair<int, Glib::ustring>(0, _("All Tracks")));
+  return_map.insert(std::pair<int, Glib::ustring>(1, _("Play Queue")));
   
   max_count = max_count - 2;
   
@@ -427,23 +427,33 @@ int Dingo::DBManager::getPlaylistsCount() {
 }
 
 Glib::ustring Dingo::DBManager::getCurrentPlaylistName() {
-  Glib::ustring return_playlist_name = "All Tracks";
-
-  d_sqlite3.quickExecute("BEGIN TRANSACTION;");
-  
-  d_sqlite3.prepareStatement("SELECT CorePlaylists.PlaylistName FROM CorePlaylists WHERE CorePlaylists.PlaylistID = :PlaylistID;");
-  
-  d_sqlite3.bindParaInt(":PlaylistID", cur_playlist_id);
-  
-  if (d_sqlite3.stepStatement() == Dingo::SQLite::ROW) {
-    return_playlist_name = d_sqlite3.getStringValue(0);
+  if (cur_playlist_id == 0) {
+    return _("All Tracks");
   }
   
-  d_sqlite3.finalizeStatement();
+  else if (cur_playlist_id == 1) {
+    return _("Play Queue");
+  }
   
-  d_sqlite3.quickExecute("COMMIT TRANSACTION;");
+  else {
+    Glib::ustring return_playlist_name = _("All Tracks");
   
-  return return_playlist_name;
+    d_sqlite3.quickExecute("BEGIN TRANSACTION;");
+  
+    d_sqlite3.prepareStatement("SELECT CorePlaylists.PlaylistName FROM CorePlaylists WHERE CorePlaylists.PlaylistID = :PlaylistID;");
+  
+    d_sqlite3.bindParaInt(":PlaylistID", cur_playlist_id);
+  
+    if (d_sqlite3.stepStatement() == Dingo::SQLite::ROW) {
+      return_playlist_name = d_sqlite3.getStringValue(0);
+    }
+  
+    d_sqlite3.finalizeStatement();
+  
+    d_sqlite3.quickExecute("COMMIT TRANSACTION;");
+  
+    return return_playlist_name;
+  }
 }
       
 //Dingo::MenuBar's METHODS

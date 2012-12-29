@@ -40,6 +40,11 @@
 #include <iostream>
 #endif //INCLUDED_IOSTREAM
 
+#ifndef INCLUDED_GLIBMM_I18N_H
+#define INCLUDED_GLIBMM_I18N_H
+#include <glibmm/i18n.h>
+#endif //INCLUDED_GLIBMM_I18N_H
+
 //CONSTRUCTORS - DESTRUCTOR
 Dingo::MPRISCommon::MPRISCommon(Dingo::DBManager* dbmanager, Dingo::PlayerEngine* playerengine, Dingo::Settings* settings, Gtk::Application* dingo_app) {
   d_dbmanager = dbmanager;
@@ -735,7 +740,7 @@ Glib::VariantBase Dingo::MPRISCommon::readActivePlaylist() {
   
   if (d_active_playlist_changed_count <= 1) {
     oss_vector.push_back(Glib::Variant<Glib::ustring>::create("/org/mpris/MediaPlayer2/Playlist/playlist"));
-    oss_vector.push_back(Glib::Variant<Glib::ustring>::create("Choose Playlist"));
+    oss_vector.push_back(Glib::Variant<Glib::ustring>::create(_("Choose Playlist")));
     oss_vector.push_back(Glib::Variant<Glib::ustring>::create(""));
   }
   

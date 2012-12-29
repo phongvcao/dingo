@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: dingo 0.5.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-12-29 01:39-0500\n"
-"PO-Revision-Date: 2012-12-29 01:45-0500\n"
+"POT-Creation-Date: 2012-12-29 16:19-0500\n"
+"PO-Revision-Date: 2012-12-29 16:21-0500\n"
 "Last-Translator: Phong V. Cao <phongvcao@phongvcao.com>\n"
 "Language-Team: Default English <phongvcao@phongvcao.com>\n"
 "MIME-Version: 1.0\n"
@@ -173,23 +173,31 @@ msgstr "Repeat Single"
 msgid "Repeat Playlist"
 msgstr "Repeat Playlist"
 
-#: ../src/dingo-dbmanager.cc:2777
+#: ../src/dingo-dbmanager.cc:375 ../src/dingo-dbmanager.cc:431
+#: ../src/dingo-dbmanager.cc:439 ../src/dingo-dbmanager.cc:2787
 msgid "All Tracks"
 msgstr "All Tracks"
 
-#: ../src/dingo-dbmanager.cc:2801
+#: ../src/dingo-dbmanager.cc:376 ../src/dingo-dbmanager.cc:435
+#: ../src/dingo-menubar.cc:719 ../src/dingo-menubar.cc:729
+#: ../src/dingo-toolbar.cc:340 ../src/dingo-tracktreeview.cc:64
+#: ../src/dingo-tracktreeview.cc:67
+msgid "Play Queue"
+msgstr "Play Queue"
+
+#: ../src/dingo-dbmanager.cc:2811
 msgid "All Genres"
 msgstr "All Genres"
 
-#: ../src/dingo-dbmanager.cc:2828
+#: ../src/dingo-dbmanager.cc:2838
 msgid "All Artists"
 msgstr "All Artists"
 
-#: ../src/dingo-dbmanager.cc:2853
+#: ../src/dingo-dbmanager.cc:2863
 msgid "All Years"
 msgstr "All Years"
 
-#: ../src/dingo-dbmanager.cc:2880
+#: ../src/dingo-dbmanager.cc:2890
 msgid "All Albums"
 msgstr "All Albums"
 
@@ -275,12 +283,6 @@ msgstr "Paste Track(s)"
 #: ../src/dingo-menubar.cc:716 ../src/dingo-tracktreeview.cc:56
 msgid "Add to..."
 msgstr "Add to..."
-
-#: ../src/dingo-menubar.cc:719 ../src/dingo-menubar.cc:729
-#: ../src/dingo-toolbar.cc:340 ../src/dingo-tracktreeview.cc:64
-#: ../src/dingo-tracktreeview.cc:67
-msgid "Play Queue"
-msgstr "Play Queue"
 
 #: ../src/dingo-menubar.cc:722 ../src/dingo-menubar.cc:733
 #: ../src/dingo-tracktreeview.cc:65 ../src/dingo-tracktreeview.cc:70
@@ -830,6 +832,10 @@ msgstr "       dingo [FILES | FOLDERS paths]"
 #: ../src/dingo-programoptions.cc:83
 msgid "Copyright (C) 2011-2013 Phong V. Cao and Contributors"
 msgstr "Copyright (C) 2011-2013 Phong V. Cao and Contributors"
+
+#: ../src/dingo-mpriscommon.cc:743
+msgid "Choose Playlist"
+msgstr "Choose Playlist"
 
 #: ../src/dingo-statusicon.cc:47
 msgid "Show Main Window"

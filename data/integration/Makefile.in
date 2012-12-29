@@ -229,7 +229,9 @@ top_builddir = @top_builddir@
 top_srcdir = @top_srcdir@
 desktopdir = /usr/share/applications
 desktop_DATA = dingo.desktop
-EXTRA_DIST = dingo.desktop.in.in
+EXTRA_DIST = dingo.desktop.in.in \
+             dingo.desktop.fix.fc17.icon.in.in
+
 DISTCLEANFILES = dingo.desktop
 all: all-am
 

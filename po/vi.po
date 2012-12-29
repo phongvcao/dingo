@@ -6,10 +6,10 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: dingo 0.5.0\n"
+"Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-12-29 01:39-0500\n"
-"PO-Revision-Date: 2012-12-29 02:09-0500\n"
+"POT-Creation-Date: 2012-12-29 16:19-0500\n"
+"PO-Revision-Date: 2012-12-29 16:46-0500\n"
 "Last-Translator: Phong V. Cao <phongvcao@phongvcao.com>\n"
 "Language-Team: Vietnamese <phongvcao@phongvcao.com>\n"
 "MIME-Version: 1.0\n"
@@ -128,7 +128,7 @@ msgstr ""
 
 #: ../src/dingo-albumtreeview.cc:195 ../src/dingo-tracktreeview.cc:717
 msgid "Album"
-msgstr "Tập nhạc"
+msgstr "Album"
 
 #: ../src/dingo-albumtreeview.cc:294
 msgid "All %1 Albums"
@@ -173,23 +173,31 @@ msgstr "Lặp lại bài"
 msgid "Repeat Playlist"
 msgstr "Lặp lại danh mục nhạc"
 
-#: ../src/dingo-dbmanager.cc:2777
+#: ../src/dingo-dbmanager.cc:375 ../src/dingo-dbmanager.cc:431
+#: ../src/dingo-dbmanager.cc:439 ../src/dingo-dbmanager.cc:2787
 msgid "All Tracks"
 msgstr "Tất cả các bài"
 
-#: ../src/dingo-dbmanager.cc:2801
+#: ../src/dingo-dbmanager.cc:376 ../src/dingo-dbmanager.cc:435
+#: ../src/dingo-menubar.cc:719 ../src/dingo-menubar.cc:729
+#: ../src/dingo-toolbar.cc:340 ../src/dingo-tracktreeview.cc:64
+#: ../src/dingo-tracktreeview.cc:67
+msgid "Play Queue"
+msgstr "Hàng đợi phát"
+
+#: ../src/dingo-dbmanager.cc:2811
 msgid "All Genres"
 msgstr "Tất cả các thể loại"
 
-#: ../src/dingo-dbmanager.cc:2828
+#: ../src/dingo-dbmanager.cc:2838
 msgid "All Artists"
 msgstr "Tất cả các nghệ sĩ"
 
-#: ../src/dingo-dbmanager.cc:2853
+#: ../src/dingo-dbmanager.cc:2863
 msgid "All Years"
 msgstr "Tất cả các năm"
 
-#: ../src/dingo-dbmanager.cc:2880
+#: ../src/dingo-dbmanager.cc:2890
 msgid "All Albums"
 msgstr "Tất cả các tập nhạc"
 
@@ -275,12 +283,6 @@ msgstr "Dán bài"
 #: ../src/dingo-menubar.cc:716 ../src/dingo-tracktreeview.cc:56
 msgid "Add to..."
 msgstr "Thêm vào..."
-
-#: ../src/dingo-menubar.cc:719 ../src/dingo-menubar.cc:729
-#: ../src/dingo-toolbar.cc:340 ../src/dingo-tracktreeview.cc:64
-#: ../src/dingo-tracktreeview.cc:67
-msgid "Play Queue"
-msgstr "Hàng đợi phát"
 
 #: ../src/dingo-menubar.cc:722 ../src/dingo-menubar.cc:733
 #: ../src/dingo-tracktreeview.cc:65 ../src/dingo-tracktreeview.cc:70
@@ -830,6 +832,10 @@ msgstr "         dingo [ĐƯỜNG DẪN ĐẾN CÁC TẬP TIN | THƯ MỤC]"
 #: ../src/dingo-programoptions.cc:83
 msgid "Copyright (C) 2011-2013 Phong V. Cao and Contributors"
 msgstr "Bản quyền (C) 2011-2013 Cao Việt Phong và những người đóng góp"
+
+#: ../src/dingo-mpriscommon.cc:743
+msgid "Choose Playlist"
+msgstr "Chọn danh mục nhạc"
 
 #: ../src/dingo-statusicon.cc:47
 msgid "Show Main Window"

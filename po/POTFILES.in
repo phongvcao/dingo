@@ -11,6 +11,7 @@ src/dingo-playlisttreeview.cc
 src/dingo-processgrid.cc
 src/dingo-notification.cc
 src/dingo-programoptions.cc
+src/dingo-mpriscommon.cc
 src/dingo-statusicon.cc
 src/dingo-toolbar.cc
 src/dingo-trackinfowindow.cc

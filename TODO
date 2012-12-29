@@ -15,11 +15,9 @@ Tasks to be done in next releases
       
     - Create http://dingo-project.org/
     
-    - Finish translating "Choose Playlist", "All Tracks", "Play Queue"
-      in SoundMenu
-    
-    - Cross-system compability (32-bit Fedora and Ubuntu)
-    (Why icon not showing in Fedora 32-bit?)
+    - With Ubuntu DEBs: dingo.desktop.in.in: Icon=dingo
+      With Fedora RPMs: dingo.desktop.in.in: Icon=/path/to/icon/file
+      Distribution source: dingo.desktop.in.in: Icon=dingo
 
 
 2. Dingo 0.5.1 - 2013:
@@ -44,10 +42,25 @@ Tasks to be done in next releases
     - Implement History submenu -> Clear Cache
     
     - Dingo::Notification can be disabled.
+    
+    - Dingo::MPRISv2 can be disabled.
+    
+    - Let user choose whether tracks' info can be saved to 
+      tracks or not
+      (integrate into Dingo::TrackInfoWindow & 
+      Dingo::MultipleTracksInfoWindow)
+    
+    - Right-click Dingo::VideoArea
+    
+    - Support for Recently Added, Most Played, Recently Played
+      => Dingo::PlaylistTreeView will contain a Gtk::TreeStore
+      instead of a Gtk::ListStore
+      => Maybe we should also rename Dingo::PlaylistTreeView
+      to something else
 
     - Drag N' Drop tracks to playlists
 
-    - Implement extra playlist-import format support
+    - Implement extra "Import Playlists" format support
 
     - Dingo::Settings save more settings
 
