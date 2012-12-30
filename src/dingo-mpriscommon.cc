@@ -581,7 +581,7 @@ Glib::VariantBase Dingo::MPRISCommon::readMetadata() {
   
   Gtk::TreeRowReference cur_playing_row_ref = d_dbmanager->getCurrentTrackRowRef();
   
-  if ((!cur_playing_row_ref.is_valid()) || (d_playerengine->getStatus() == Dingo::ENGINE_STOPPED)) {
+  if (!cur_playing_row_ref.is_valid()) {
     metadata_variant = Glib::Variant<std::map<Glib::ustring, Glib::VariantBase> >::create(metadata_map);
     
     return metadata_variant;

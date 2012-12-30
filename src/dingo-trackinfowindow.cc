@@ -149,15 +149,16 @@ void Dingo::TrackInfoWindow::setDisplayTrack(Gtk::TreeRowReference cur_edit_row_
   d_comment_textbuffer->set_text(d_cur_comment);
   
   if (track_info_map["TrackMIMEType"] == "video/*") {
-    d_details_grid.attach(d_subtitle_path, 0, 4, 1, 1);
-    d_details_grid.attach(d_subtitle_path_entry, 1, 4, 2, 1);
+    d_subtitle_path.show();
+    d_subtitle_path_entry.show();
+    
     d_cur_subtitle_path = track_info_map["TrackSubtitlePath"];
     d_subtitle_path_entry.set_text(d_cur_subtitle_path);
   }
   
   else {
-    d_details_grid.remove(d_subtitle_path);
-    d_details_grid.remove(d_subtitle_path_entry);
+    d_subtitle_path.hide();
+    d_subtitle_path_entry.hide();
   }
   
   //Details Tab

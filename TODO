@@ -18,6 +18,9 @@ Tasks to be done in next releases
     - With Ubuntu DEBs: dingo.desktop.in.in: Icon=dingo
       With Fedora RPMs: dingo.desktop.in.in: Icon=/path/to/icon/file
       Distribution source: dingo.desktop.in.in: Icon=dingo
+    
+    - Dingo::TrackTreeView's sub-window (trackinfowindow vs 
+      multipletracksinfowindow not centering on started up)
 
 
 2. Dingo 0.5.1 - 2013:

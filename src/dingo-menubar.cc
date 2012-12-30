@@ -749,7 +749,7 @@ void Dingo::MenuBar::createEditMenu() {
 }
 
 void Dingo::MenuBar::createViewMenu() {
-  d_actiongroup->add(Gtk::Action::create("ViewMenu", _("View")));
+  d_actiongroup->add(Gtk::Action::create("ViewMenu", _("View")), sigc::mem_fun(*this, &Dingo::MenuBar::onViewMenuActivated));
   
   d_actiongroup->add(Gtk::Action::create("ViewBrowsersSubMenu", _("Browsers")));
   
@@ -848,7 +848,9 @@ void Dingo::MenuBar::createViewMenu() {
   view_fullscreen = Gtk::ToggleAction::create("ViewFullscreen", _("Fullscreen"));
   d_actiongroup->add(view_fullscreen, Gtk::AccelKey("<alt>F"));
   view_fullscreen_connection = view_fullscreen->signal_toggled().connect(sigc::mem_fun(*this, &Dingo::MenuBar::onViewFullscreenToggled));
-  d_actiongroup->add(Gtk::Action::create("ViewLyrics", _("Lyrics")), Gtk::AccelKey("<alt>L"), sigc::mem_fun(*this, &Dingo::MenuBar::onViewLyricsActivated));
+  
+  view_lyrics = Gtk::Action::create("ViewLyrics", _("Lyrics"));
+  d_actiongroup->add(view_lyrics, Gtk::AccelKey("<alt>L"), sigc::mem_fun(*this, &Dingo::MenuBar::onViewLyricsActivated));
 }
 
 void Dingo::MenuBar::createControlMenu() {
@@ -1321,6 +1323,16 @@ void Dingo::MenuBar::onEditSettingsRestoreToDefaultActivated() {
 }
       
 //SIGNAL HANDLERS - VIEW MENU
+void Dingo::MenuBar::onViewMenuActivated() {
+  if (!d_tracktreeview->getIsAnyTrackSelected()) {
+    view_lyrics->set_sensitive(false);
+  }
+  
+  else {
+    view_lyrics->set_sensitive(true);
+  }
+}
+
 void Dingo::MenuBar::onViewPlaylistBrowserToggled() {
   d_playlistscrolled->set_visible(view_playlist_browser->get_active());
   

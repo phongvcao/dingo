@@ -234,6 +234,10 @@ void Dingo::TrackTreeView::updateRepeatOff() {
   
   notifyTrackTreeViewObserver(Dingo::TRACK_TREE_ROW_DEACTIVATED);
   
+  cur_track_row_ref = Gtk::TreeRowReference();
+  
+  d_dbmanager->setCurrentTrackRowRef(cur_track_row_ref);
+  
   Dingo::MPRISv2::emitPropertiesChangedSignal(Dingo::MPRISv2::INTERFACE_PLAYER, "Metadata");
 }
 
@@ -961,11 +965,13 @@ void Dingo::TrackTreeView::onEditInfoActivated() {
   
   get_selection()->select(temp_path_vector[0]);
   
-  d_trackinfowindow.setDisplayTrack(cur_edit_row_ref);
+  d_trackinfowindow.set_transient_for(*(d_dbmanager->getWindow()));
   
   d_trackinfowindow.show_all();
   
-  d_trackinfowindow.set_transient_for(*(d_dbmanager->getWindow()));
+  d_trackinfowindow.setDisplayTrack(cur_edit_row_ref);
+  
+  d_trackinfowindow.setCurrentPage(0);
 }
 
 void Dingo::TrackTreeView::onEditAllInfoActivated() {
@@ -981,9 +987,9 @@ void Dingo::TrackTreeView::onEditAllInfoActivated() {
   
   cur_edit_row_vector.clear();
   
-  d_multipleinfowindow.show_all();
-  
   d_multipleinfowindow.set_transient_for(*(d_dbmanager->getWindow()));
+  
+  d_multipleinfowindow.show_all();
 }
 
 void Dingo::TrackTreeView::onLyricsActivated() {
@@ -1035,9 +1041,9 @@ void Dingo::TrackTreeView::onAddToNormalPlaylistActivated() {
   
   d_trackplaylisteditwindow.setDisplayTracks(selected_row_ref_vector);
   
-  d_trackplaylisteditwindow.show_all();
-  
   d_trackplaylisteditwindow.set_transient_for(*(d_dbmanager->getWindow()));
+  
+  d_trackplaylisteditwindow.show_all();
 }
 
 void Dingo::TrackTreeView::onDeleteFromSubMenuActivated() {
@@ -1578,6 +1584,7 @@ bool Dingo::TrackTreeView::on_button_press_event(GdkEventButton* event) {
       edit_all_info.set_sensitive(false);
       add_to.set_sensitive(false);
       delete_from.set_sensitive(false);
+      lyrics.set_sensitive(false);
       
       if (d_dbmanager->getCurrentPlaylistID() == 0) {
         paste_tracks.set_sensitive(false);
@@ -1604,6 +1611,7 @@ bool Dingo::TrackTreeView::on_button_press_event(GdkEventButton* event) {
       edit_all_info.set_sensitive(true);
       add_to.set_sensitive(true);
       delete_from.set_sensitive(true);
+      lyrics.set_sensitive(true);
     }
     
     if (!d_dbmanager->getIsAnyTrackInClipboard()) {

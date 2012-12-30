@@ -138,6 +138,7 @@ namespace Dingo {
       void onEditSettingsRestoreToDefaultActivated();
       
       //SIGNAL HANDLERS - VIEW MENU
+      void onViewMenuActivated();
       void onViewPlaylistBrowserToggled();
       void onViewTrackBrowserToggled();
       
@@ -197,6 +198,7 @@ namespace Dingo {
       Glib::RefPtr<Gtk::ToggleAction> view_playback_status, view_track_number, view_track_title, view_track_genre, view_track_artist, view_track_album, view_track_year, view_track_time, view_track_extension, view_track_bitrate;
       Glib::RefPtr<Gtk::ToggleAction> view_audio_only, view_video_only;
       Glib::RefPtr<Gtk::ToggleAction> view_fullscreen;
+      Glib::RefPtr<Gtk::Action> view_lyrics;
       
       sigc::connection control_play_connection;
       sigc::connection control_shuffle_connection;
