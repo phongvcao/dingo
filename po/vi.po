@@ -835,7 +835,7 @@ msgstr "Bản quyền (C) 2011-2013 Cao Việt Phong và những người đóng
 
 #: ../src/dingo-mpriscommon.cc:743
 msgid "Choose Playlist"
-msgstr "Chọn danh mục nhạc"
+msgstr "Chọn danh mục"
 
 #: ../src/dingo-statusicon.cc:47
 msgid "Show Main Window"
