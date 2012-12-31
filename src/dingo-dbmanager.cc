@@ -2120,6 +2120,10 @@ void Dingo::DBManager::setTrackInfo(Gtk::TreeRowReference cur_edit_row_ref, std:
     else if (iter->first == "TrackMIMEType") {
       continue;
     }
+    
+    else if (iter->first == "TrackLyrics") {
+      set_track_info_query += "TrackLyrics = :TrackLyrics";
+    }
   
     if (iter != --changed_values_map.end()) {
       set_track_info_query += ", ";

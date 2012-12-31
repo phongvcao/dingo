@@ -472,9 +472,11 @@ void Dingo::TrackTreeView::updateEngineTrackCurrent() {
     case Dingo::ENGINE_PLAYING: {
       d_playerengine->pause();
       
-      Gtk::TreeModel::Row temp_cur_row = *(Dingo::DBManager::trackModel->get_iter(cur_track_row_ref.get_path()));
+      if (cur_track_row_ref.is_valid()) {
+        Gtk::TreeModel::Row temp_cur_row = *(Dingo::DBManager::trackModel->get_iter(cur_track_row_ref.get_path()));
       
-      temp_cur_row[(*Dingo::DBManager::trackCR).trackStatus] = d_pausing_image.get_pixbuf();
+        temp_cur_row[(*Dingo::DBManager::trackCR).trackStatus] = d_pausing_image.get_pixbuf();
+      }
       
       break;
     }
@@ -482,9 +484,11 @@ void Dingo::TrackTreeView::updateEngineTrackCurrent() {
     case Dingo::ENGINE_PAUSED: {
       d_playerengine->play();
       
-      Gtk::TreeModel::Row temp_cur_row = *(Dingo::DBManager::trackModel->get_iter(cur_track_row_ref.get_path()));
+      if (cur_track_row_ref.is_valid()) {
+        Gtk::TreeModel::Row temp_cur_row = *(Dingo::DBManager::trackModel->get_iter(cur_track_row_ref.get_path()));
       
-      temp_cur_row[(*Dingo::DBManager::trackCR).trackStatus] = d_playing_image.get_pixbuf();
+        temp_cur_row[(*Dingo::DBManager::trackCR).trackStatus] = d_playing_image.get_pixbuf();
+      }
       
       break;
     }
@@ -497,44 +501,48 @@ void Dingo::TrackTreeView::updateEngineTrackCurrent() {
       if (temp_selected_path_vector.size() == 0) {
         Gtk::TreeModel::Children children = get_model()->children();
         
-        temp_cur_selected_path = get_model()->get_path(children.begin());
+        if (children.begin()) {
+          temp_cur_selected_path = get_model()->get_path(children.begin());
+        }
       }
       
       else {
         temp_cur_selected_path = temp_selected_path_vector[0];
       }
+      
+      if (!temp_cur_selected_path.empty()) {
+        //get the current track's Gtk::TreePath & convert it to the underlying model's Gtk::TreePath      
+        get_selection()->select(temp_cur_selected_path);
     
-      //get the current track's Gtk::TreePath & convert it to the underlying model's Gtk::TreePath      
-      get_selection()->select(temp_cur_selected_path);
-    
-      //create a Gtk::TreeRowReference for the current underlying model's Gtk::TreePath & save the Gtk::TreeRowReference
-      //to cur_track_row_ref
-      Gtk::TreeRowReference temp_track_row_ref(Dingo::DBManager::trackModel, d_track_filter->convert_path_to_child_path(d_track_sort->convert_path_to_child_path(temp_cur_selected_path)));
-        
-      cur_track_row_ref = temp_track_row_ref;
+        //create a Gtk::TreeRowReference for the current underlying model's Gtk::TreePath & save the Gtk::TreeRowReference
+        //to cur_track_row_ref
+        Gtk::TreeRowReference temp_track_row_ref(Dingo::DBManager::trackModel, d_track_filter->convert_path_to_child_path(d_track_sort->convert_path_to_child_path(temp_cur_selected_path)));
+      
+        cur_track_row_ref = temp_track_row_ref;
   
-      d_dbmanager->setCurrentTrackRowRef(cur_track_row_ref);
+        d_dbmanager->setCurrentTrackRowRef(cur_track_row_ref);
       
-      //notify TrackTreeViewObserver
-      notifyTrackTreeViewObserver(Dingo::TRACK_TREE_ROW_ACTIVATED);
+        //notify TrackTreeViewObserver
+        notifyTrackTreeViewObserver(Dingo::TRACK_TREE_ROW_ACTIVATED);
       
-      //select the current temp_path
-      //have to convert to the underlying model's path because the get_selection() belongs to the original model
-      Gtk::TreeModel::iterator temp_cur_track_iter = Dingo::DBManager::trackModel->get_iter(d_track_filter->convert_path_to_child_path(d_track_sort->convert_path_to_child_path(temp_cur_selected_path)));
+        //select the current temp_path
+        //have to convert to the underlying model's path because the get_selection() belongs to the original model
+        Gtk::TreeModel::iterator temp_cur_track_iter = Dingo::DBManager::trackModel->get_iter(d_track_filter->convert_path_to_child_path(d_track_sort->convert_path_to_child_path(temp_cur_selected_path)));
       
-      Gtk::TreeModel::Row temp_row = *temp_cur_track_iter;
+        Gtk::TreeModel::Row temp_row = *temp_cur_track_iter;
         
-      d_playerengine->read(temp_row[(*Dingo::DBManager::trackCR).trackURI], temp_row[(*Dingo::DBManager::trackCR).trackMIMEType], temp_row[(*Dingo::DBManager::trackCR).trackID], temp_row[(*Dingo::DBManager::trackCR).trackSubtitleURI]);
+        d_playerengine->read(temp_row[(*Dingo::DBManager::trackCR).trackURI], temp_row[(*Dingo::DBManager::trackCR).trackMIMEType], temp_row[(*Dingo::DBManager::trackCR).trackID], temp_row[(*Dingo::DBManager::trackCR).trackSubtitleURI]);
         
-      d_playing_track_id = temp_row[(*Dingo::DBManager::trackCR).trackID];
+        d_playing_track_id = temp_row[(*Dingo::DBManager::trackCR).trackID];
       
-      highlightRow(temp_cur_track_iter);
+        highlightRow(temp_cur_track_iter);
         
-      d_playerengine->play();
+        d_playerengine->play();
   
-      d_playerengine->notifyEngineStatusObserver(Dingo::ENGINE_NEW_PLAYING);
+        d_playerengine->notifyEngineStatusObserver(Dingo::ENGINE_NEW_PLAYING);
         
-      Dingo::MPRISv2::emitPropertiesChangedSignal(Dingo::MPRISv2::INTERFACE_PLAYER, "Metadata");
+        Dingo::MPRISv2::emitPropertiesChangedSignal(Dingo::MPRISv2::INTERFACE_PLAYER, "Metadata");
+      }
         
       break;
     }

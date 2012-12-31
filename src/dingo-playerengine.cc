@@ -509,8 +509,10 @@ double Dingo::PlayerEngine::getPercentage() {
   Gst::Format fmt = Gst::FORMAT_TIME;
   double result = 0;
   
-  if ((d_playbin->query_position(fmt, d_pos)) && (d_playbin->query_duration(fmt, d_duration))) {
+  if (d_playbin) {
+    if ((d_playbin->query_position(fmt, d_pos)) && (d_playbin->query_duration(fmt, d_duration))) {
     result = double(d_pos) / d_duration;
+    }
   }
   
   return result;

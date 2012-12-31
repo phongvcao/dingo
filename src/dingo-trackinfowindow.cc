@@ -450,10 +450,14 @@ void Dingo::TrackInfoWindow::applyNewTrackInfo() {
   if (values_changed) {
     d_dbmanager->setTrackInfo(d_cur_edit_row_ref, d_changed_values_map);
     
-    Gtk::TreeModel::Row row = *(Dingo::DBManager::trackModel->get_iter(d_dbmanager->getCurrentTrackRowRef().get_path()));
+    Gtk::TreeRowReference cur_track_row_ref = d_dbmanager->getCurrentTrackRowRef();
     
-    if (row[(*Dingo::DBManager::trackCR).trackID] == d_cur_edit_id) {
-      Dingo::MPRISv2::emitPropertiesChangedSignal(Dingo::MPRISv2::INTERFACE_PLAYER, "Metadata");
+    if (cur_track_row_ref.is_valid()) {
+      Gtk::TreeModel::Row row = *(Dingo::DBManager::trackModel->get_iter(cur_track_row_ref.get_path()));
+    
+      if (row[(*Dingo::DBManager::trackCR).trackID] == d_cur_edit_id) {
+        Dingo::MPRISv2::emitPropertiesChangedSignal(Dingo::MPRISv2::INTERFACE_PLAYER, "Metadata");
+      }
     }
   }
 }
