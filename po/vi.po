@@ -128,7 +128,7 @@ msgstr ""
 
 #: ../src/dingo-albumtreeview.cc:195 ../src/dingo-tracktreeview.cc:717
 msgid "Album"
-msgstr "Album"
+msgstr "Tập nhạc"
 
 #: ../src/dingo-albumtreeview.cc:294
 msgid "All %1 Albums"
