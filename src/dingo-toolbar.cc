@@ -394,8 +394,6 @@ void Dingo::ToolBar::onHomeButtonToggled() {
       d_now_playing.set_active(false);
       d_play_queue.set_active(false);
       
-      d_dbmanager->setCurrentPlaylistID(0);
-      
       notifyToolBarObserver(Dingo::HOME_TOGGLED);
       
       ++d_playlist_changed_count;

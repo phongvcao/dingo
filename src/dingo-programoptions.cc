@@ -79,7 +79,7 @@ Dingo::ProgramOptions::ProgramOptions(int& argc, char**& argv) {
   }
   
   if (cmd_variables_map.count("version")) {
-    std::cout << "Dingo 0.5 (0.5.0) http://www.dingo-project.org" << std::endl;
+    std::cout << "Dingo 0.5 (0.5.1) http://www.dingo-project.org" << std::endl;
     std::cout << _("Copyright (C) 2011-2013 Phong V. Cao and Contributors") << std::endl;
     
     for (int i = 0; i < argc; ++i) {

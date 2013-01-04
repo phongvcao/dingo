@@ -48,7 +48,7 @@ void Dingo::AboutDialog::createAboutDialog() {
 
   set_program_name("Dingo");
   
-  set_version("0.5.0");
+  set_version("0.5.1");
   
   set_copyright(_("Copyright \xc2\xa9 2011-2013 Phong V. Cao"));
   

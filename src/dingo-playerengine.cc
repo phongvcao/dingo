@@ -82,7 +82,6 @@ void Dingo::PlayerEngine::notifyRepeatModeObserver(Dingo::RepeatMode repeat_mode
   switch (repeat_mode) {
     case Dingo::REPEAT_OFF: {
       for (std::vector<Dingo::RepeatModeObserver*>::iterator iter = repeat_obs_vector.begin(); iter != repeat_obs_vector.end(); ++iter) {
-        stop();
         (*iter)->updateRepeatOff();
       }
       //std::cout << "Media Repeat Off!" << std::endl;
@@ -91,7 +90,6 @@ void Dingo::PlayerEngine::notifyRepeatModeObserver(Dingo::RepeatMode repeat_mode
     
     case Dingo::REPEAT_SINGLE: {
       for (std::vector<Dingo::RepeatModeObserver*>::iterator iter = repeat_obs_vector.begin(); iter != repeat_obs_vector.end(); ++iter) {
-        play();
         (*iter)->updateRepeatSingle();
       }
       //std::cout << "Media Repeat Single!" << std::endl;

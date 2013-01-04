@@ -234,14 +234,13 @@ Dingo::ControlBar::~ControlBar() {
       
 //INHERITED OBSERVER'S METHODS
 void Dingo::ControlBar::updateRepeatOff() {
-  d_play_button.set_image(d_play_image);
+  if (d_playerengine->getStatus() != Dingo::ENGINE_STOPPED) {
+    updateEnginePlaying();
+  }
   
-  disconnectFromTimeOut();
-  
-  d_playerengine->setStatus(Dingo::ENGINE_STOPPED);
-  
-  d_pos_label.set_markup("0:00 | 0:00");
-  d_dur_label.set_markup("0:00 | 0:00");
+  else {
+    updateEngineStopped();
+  }
 }
 
 void Dingo::ControlBar::updateRepeatSingle() {

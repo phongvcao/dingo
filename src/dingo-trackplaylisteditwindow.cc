@@ -888,6 +888,10 @@ void Dingo::TrackPlaylistEditWindow::onSaveButtonClicked() {
   
   notifyTrackPlaylistEditWindowObserver(Dingo::TRACKPLAYLISTEDIT_INFO_SAVED);
   
+  filterPlaylists();
+
+  d_trackplaylist_modify_filter->refilter();
+  
   resetData();
   
   hide();

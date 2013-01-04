@@ -1,14 +1,30 @@
 =====================================================================================
-Dingo 0.5.0 - 2012-12-14 
+Dingo 0.5.1 - 2013-01-04 
 -------------------------------------------------------------------------------------
 Author/Maintainer: Phong V. Cao <phongvcao@phongvcao.com>
 =====================================================================================
 
-    Dingo 0.5.0 is the result of more than 1 year and 6 months of work
+    Dingo 0.5.1 is a bugs-fixing release after Dingo 0.5.0, 
+    the first official release of Dingo Media Manager
+	
+    Dingo is the result of more than 1 year and 6 months of work
     by Phong V. Cao <phongvcao@phongvcao.com> and authors and 
-    contributors of various Dingo's dependecies. 
+    contributors of various Dingo's dependecies.
     
-    Dingo 0.5.0 is the first stable release of Dingo Media Manager.
+    Changes in this version:
+    - "Repeat Off" will play the next track after finishing the
+      current track instead of stopping completely.
+    - Navigate to home will make Dingo come back to the current
+      playlist, instead of "All Tracks". This fixes the error when
+      user navigates to a particular playlist and then play
+      a video but when coming back the playlist is set to the main
+      playlist.
+    - The "Manage Tracks' Membership" window will update the
+      track-count in each playlist if there is some changes in 
+      the number of tracks in the playlist.
+    - On Fedora: If there is no track in a playlist and 
+      "Play" button is clicked, the empty notification will no 
+      longer appear.
     
     Notable New Features:
     - Manage and filter both audios and videos
@@ -27,7 +43,7 @@ SOURCES / PACKAGES
 Sources
 -------
 
-    * Dingo 0.5.0 Tarballs (sourceforge.net)
+    * Dingo 0.5.1 Tarballs (sourceforge.net)
 
 
 Packages

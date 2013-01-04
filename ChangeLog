@@ -1,3 +1,34 @@
+2012-01-04  The Dingo Project  <http://dingo-project.org>
+
+	Dingo 0.5.1
+	
+	This release is basically a bugs-fixing release after the
+	first official release of Dingo Media Manager. Here are 
+	the changes in this version:
+	
+	- "Repeat Off" will play the next track after finishing the
+	current track instead of stopping completely.
+	
+	- Navigate to home will make Dingo come back to the current
+	playlist, instead of "All Tracks". This fixes the error when
+	user navigates to a particular playlist and then play
+	a video but when coming back the playlist is set to the main
+	playlist.
+	
+	- The "Manage Tracks' Membership" window will update the
+	track-count in each playlist if there is some changes in 
+	the number of tracks in the playlist.
+	
+	- On Fedora: If there is no track in a playlist and 
+	"Play" button is clicked, the empty notification will no 
+	longer appear.
+	
+	If you want to know general changes made and functionalities
+	available for this version please refer to the NEWS file. If
+	you want to know commit-level changes please use 'git log'
+	against a clone of our git repository 
+	(https://github.com/phongvcao/dingo).
+
 2012-12-14  The Dingo Project  <http://dingo-project.org>
 
 	Dingo 0.5.0

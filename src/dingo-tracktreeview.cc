@@ -222,7 +222,116 @@ void Dingo::TrackTreeView::updateChangesInCoreTracks() {
 }
 
 void Dingo::TrackTreeView::updateRepeatOff() {
-  Gtk::TreeModel::iterator iter = Dingo::DBManager::trackModel->get_iter(cur_track_row_ref.get_path());
+  Gtk::TreeModel::iterator temp_iter = Dingo::DBManager::trackModel->get_iter(cur_track_row_ref.get_path());
+  
+  Gtk::TreeModel::iterator temp_top_iter = get_model()->get_iter(d_track_sort->convert_child_path_to_path(d_track_filter->convert_child_path_to_path(cur_track_row_ref.get_path())));
+  
+  Gtk::TreeModel::Row temp_row;
+  Gtk::TreeModel::Row temp_top_row;
+  
+  Gtk::TreeModel::Path temp_top_path = get_model()->get_path(temp_top_iter);
+  
+  if (temp_iter) {
+    unhighlightRow(temp_iter);
+  }
+  
+  Gtk::TreeModel::Children children = get_model()->children();
+  
+  switch (d_playerengine->getPlayOrder()) {
+    case Dingo::PLAYORDER_NORMAL: {
+      temp_top_path.next();
+      break;
+    }
+    
+    case Dingo::PLAYORDER_SHUFFLE: {
+      int top_path_int = -1;
+    
+      if (temp_top_path.to_string() != "") {
+        top_path_int = Dingo::Utilities::stringToInt(temp_top_path.to_string());
+      }
+    
+      int lower_bound = top_path_int + 1;
+      int upper_bound = children.size() - 1;
+      Glib::ustring new_top_path_str = "0";
+      
+      if (lower_bound == upper_bound - 1) {
+        new_top_path_str = Dingo::Utilities::intToString(upper_bound);
+      }
+      
+      else if (lower_bound == upper_bound) {
+        new_top_path_str = "0";
+      }
+      
+      else {
+        new_top_path_str = Dingo::Utilities::intToString(Dingo::Utilities::randomInRange(lower_bound, upper_bound));
+      }
+    
+      Gtk::TreeModel::Path new_temp_top_path(new_top_path_str);
+    
+      temp_top_path = new_temp_top_path;
+      
+      break;
+    }
+    
+    default: {
+      //std::cout << "Unknown Dingo::PlayOrder!" << std::endl;
+      temp_top_path.next();
+      break;
+    }
+  }
+  
+  temp_top_iter = get_model()->get_iter(temp_top_path);
+  
+  if (temp_top_iter) {
+    temp_top_row = *temp_top_iter;
+  
+    temp_iter = Dingo::DBManager::trackModel->get_iter(d_track_filter->convert_path_to_child_path(d_track_sort->convert_path_to_child_path(temp_top_path)));
+  
+    //save the newly played row to cur_track_row_ref
+    Gtk::TreeRowReference temp_ref(Dingo::DBManager::trackModel, d_track_filter->convert_path_to_child_path(d_track_sort->convert_path_to_child_path(temp_top_path)));
+  
+    cur_track_row_ref = temp_ref;
+  
+    d_dbmanager->setCurrentTrackRowRef(cur_track_row_ref);
+  
+    //play the file
+    temp_row = *temp_iter;
+  
+    if ((d_playerengine->getStatus() == Dingo::ENGINE_PLAYING) || (d_playerengine->getStatus() == Dingo::ENGINE_PAUSED)) {
+      d_playerengine->setStatus(Dingo::ENGINE_STOPPED);
+    }
+  
+    d_playerengine->read(temp_row[(*Dingo::DBManager::trackCR).trackURI], temp_row[(*Dingo::DBManager::trackCR).trackMIMEType], temp_row[(*Dingo::DBManager::trackCR).trackID], temp_row[(*Dingo::DBManager::trackCR).trackSubtitleURI]);
+  
+    d_playing_track_id = temp_row[(*Dingo::DBManager::trackCR).trackID];
+  
+    //notify TrackTreeViewObserver
+    notifyTrackTreeViewObserver(Dingo::TRACK_TREE_ROW_ACTIVATED);
+  
+    highlightRow(temp_iter);
+  
+    d_playerengine->play();
+  
+    d_playerengine->notifyEngineStatusObserver(Dingo::ENGINE_NEW_PLAYING);
+  
+    Dingo::MPRISv2::emitPropertiesChangedSignal(Dingo::MPRISv2::INTERFACE_PLAYER, "Metadata");
+  }
+  
+  else {
+    d_playerengine->stop();
+  
+    d_playing_track_id = 0;
+  
+    notifyTrackTreeViewObserver(Dingo::TRACK_TREE_ROW_DEACTIVATED);
+  
+    cur_track_row_ref = Gtk::TreeRowReference();
+  
+    d_dbmanager->setCurrentTrackRowRef(cur_track_row_ref);
+  
+    Dingo::MPRISv2::emitPropertiesChangedSignal(Dingo::MPRISv2::INTERFACE_PLAYER, "Metadata");
+  }
+
+  /* Gtk::TreeModel::iterator iter = Dingo::DBManager::trackModel->get_iter(cur_track_row_ref.get_path());
   
   unhighlightRow(iter);
   
@@ -238,7 +347,7 @@ void Dingo::TrackTreeView::updateRepeatOff() {
   
   d_dbmanager->setCurrentTrackRowRef(cur_track_row_ref);
   
-  Dingo::MPRISv2::emitPropertiesChangedSignal(Dingo::MPRISv2::INTERFACE_PLAYER, "Metadata");
+  Dingo::MPRISv2::emitPropertiesChangedSignal(Dingo::MPRISv2::INTERFACE_PLAYER, "Metadata"); */
 }
 
 void Dingo::TrackTreeView::updateRepeatSingle() {

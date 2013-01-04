@@ -20,7 +20,21 @@ Tasks to be done in next releases
       Distribution source: dingo.desktop.in.in: Icon=dingo
 
 
-2. Dingo 0.5.1 - 2013:
+
+2. Dingo 0.5.1 - 2013 - Current Version:
+----------------------------------------
+      
+    - Repeat Off continue to play the next track (fixed)
+    
+    - Home not auto refresh filters & browsers (fixed)
+    
+    - Add to... -> Playlist(s) not updating the TreeModel when opening (fixed)
+    
+    - Edit all files to go to Dingo 0.5.1
+
+
+
+3. Dingo 0.5.2 - 2013:
 ----------------------
 
     - Fix video pause - picture loss Error Gst::XOverlay - Email 
@@ -30,12 +44,18 @@ Tasks to be done in next releases
 
     - Finish up Dingo::ProcessGrid
       (Add Importing Genres & Importing other kinds of tags)
+      
+    - Website must be done.
+
 
 
 4. Dingo 0.6.0 - 2014:
 ----------------------
    
     - Smart Playlist
+    
+    - Smarter Shuffle (no duplicates, make sure to play all tracks
+      without leaving any unplayed)
     
     - Separate Settings Dialog
     
