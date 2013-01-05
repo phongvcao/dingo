@@ -25,6 +25,10 @@ Author/Maintainer: Phong V. Cao <phongvcao@phongvcao.com>
     - On Fedora: If there is no track in a playlist and 
       "Play" button is clicked, the empty notification will no 
       longer appear.
+    - Fixed Track Comment not being saved by "Edit Single Track"
+    - Fixed highlighting error happening when the current playing
+      song is edited and the changed metadata is either track number,
+      title, artist, album, or year. 
     
     Notable New Features:
     - Manage and filter both audios and videos

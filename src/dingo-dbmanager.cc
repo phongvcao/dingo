@@ -2060,7 +2060,13 @@ void Dingo::DBManager::setTrackInfo(Gtk::TreeRowReference cur_edit_row_ref, std:
   std::set<Glib::ustring> year_set;
   std::set<Glib::ustring> album_set;
   
-  //get the Gtk::TreeModel::Row
+  //get the Gtk::TreeModel::Row of d_cur_track_row_ref
+  Gtk::TreeModel::Row cur_track_row;
+  if (d_cur_track_row_ref.is_valid()) {
+    cur_track_row = *(Dingo::DBManager::trackModel->get_iter(d_cur_track_row_ref.get_path()));
+  }
+  
+  //get the Gtk::TreeModel::Row of cur_edit_row_ref
   Gtk::TreeModel::Row cur_edit_row = *(Dingo::DBManager::trackModel->get_iter(cur_edit_row_ref.get_path()));
   
   //now start to update the row in CoreTracks
@@ -2070,38 +2076,50 @@ void Dingo::DBManager::setTrackInfo(Gtk::TreeRowReference cur_edit_row_ref, std:
     if (iter->first == "TrackArtist") {
       artist_set.insert(iter->second);
       insertArtistsToDatabase(artist_set, Dingo::PROCESS_EDITING_SINGLE_TRACK);
-      cur_edit_row[(*Dingo::DBManager::trackCR).trackArtist] = Dingo::Utilities::encodeFromEntityString(iter->second);
+      if (cur_track_row) {
+        cur_edit_row[(*Dingo::DBManager::trackCR).trackArtist] = cur_track_row[(*Dingo::DBManager::trackCR).trackID] == cur_edit_row[(*Dingo::DBManager::trackCR).trackID] ? Dingo::Utilities::highlightString(Dingo::Utilities::encodeFromEntityString(iter->second)) : Dingo::Utilities::encodeFromEntityString(iter->second);
+      }
       set_track_info_query += "ArtistID = (SELECT CoreArtists.ArtistID FROM CoreArtists WHERE CoreArtists.ArtistName = :ArtistName)";
     }
     
     else if (iter->first == "TrackAlbum") {
       album_set.insert(iter->second);
       insertAlbumsToDatabase(album_set, Dingo::PROCESS_EDITING_SINGLE_TRACK);
-      cur_edit_row[(*Dingo::DBManager::trackCR).trackAlbum] = Dingo::Utilities::encodeFromEntityString(iter->second);
+      if (cur_track_row) {
+        cur_edit_row[(*Dingo::DBManager::trackCR).trackAlbum] = cur_track_row[(*Dingo::DBManager::trackCR).trackID] == cur_edit_row[(*Dingo::DBManager::trackCR).trackID] ? Dingo::Utilities::highlightString(Dingo::Utilities::encodeFromEntityString(iter->second)) : Dingo::Utilities::encodeFromEntityString(iter->second);
+      }
       set_track_info_query += "AlbumID = (SELECT CoreAlbums.AlbumID FROM CoreAlbums WHERE CoreAlbums.AlbumName = :AlbumName)";
     }
     
     else if (iter->first == "TrackGenre") {
       genre_set.insert(iter->second);
       insertGenresToDatabase(genre_set, Dingo::PROCESS_EDITING_SINGLE_TRACK);
-      cur_edit_row[(*Dingo::DBManager::trackCR).trackGenre] = Dingo::Utilities::encodeFromEntityString(iter->second);
+      if (cur_track_row) {
+        cur_edit_row[(*Dingo::DBManager::trackCR).trackGenre] = cur_track_row[(*Dingo::DBManager::trackCR).trackID] == cur_edit_row[(*Dingo::DBManager::trackCR).trackID] ? Dingo::Utilities::highlightString(Dingo::Utilities::encodeFromEntityString(iter->second)) : Dingo::Utilities::encodeFromEntityString(iter->second);
+      }
       set_track_info_query += "GenreID = (SELECT CoreGenres.GenreID FROM CoreGenres WHERE CoreGenres.GenreName = :GenreName)";
     }
     
     else if (iter->first == "TrackYear") {
       year_set.insert(iter->second);
       insertYearsToDatabase(year_set, Dingo::PROCESS_EDITING_SINGLE_TRACK);
-      cur_edit_row[(*Dingo::DBManager::trackCR).trackYear] = Dingo::Utilities::encodeFromEntityString(iter->second);
+      if (cur_track_row) {
+        cur_edit_row[(*Dingo::DBManager::trackCR).trackYear] = cur_track_row[(*Dingo::DBManager::trackCR).trackID] == cur_edit_row[(*Dingo::DBManager::trackCR).trackID] ? Dingo::Utilities::highlightString(Dingo::Utilities::encodeFromEntityString(iter->second)) : Dingo::Utilities::encodeFromEntityString(iter->second);
+      }
       set_track_info_query += "YearID = (SELECT CoreYears.YearID FROM CoreYears WHERE CoreYears.YearName = :YearName)";
     }
     
     else if (iter->first == "TrackTitle") {
-      cur_edit_row[(*Dingo::DBManager::trackCR).trackTitle] = Dingo::Utilities::encodeFromEntityString(iter->second);
+      if (cur_track_row) {
+        cur_edit_row[(*Dingo::DBManager::trackCR).trackTitle] = cur_track_row[(*Dingo::DBManager::trackCR).trackID] == cur_edit_row[(*Dingo::DBManager::trackCR).trackID] ? Dingo::Utilities::highlightString(Dingo::Utilities::encodeFromEntityString(iter->second)) : Dingo::Utilities::encodeFromEntityString(iter->second);
+      }
       set_track_info_query += "TrackTitle = :TrackTitle";
     }
     
     else if (iter->first == "TrackNumber") {
-      cur_edit_row[(*Dingo::DBManager::trackCR).trackNumber] = iter->second;
+      if (cur_track_row) {
+        cur_edit_row[(*Dingo::DBManager::trackCR).trackNumber] = cur_track_row[(*Dingo::DBManager::trackCR).trackID] == cur_edit_row[(*Dingo::DBManager::trackCR).trackID] ? Dingo::Utilities::highlightString(Dingo::Utilities::encodeFromEntityString(iter->second)) : Dingo::Utilities::encodeFromEntityString(iter->second);
+      }
       set_track_info_query += "TrackNumber = :TrackNumber";
     }
     
@@ -2121,8 +2139,8 @@ void Dingo::DBManager::setTrackInfo(Gtk::TreeRowReference cur_edit_row_ref, std:
       continue;
     }
     
-    else if (iter->first == "TrackLyrics") {
-      set_track_info_query += "TrackLyrics = :TrackLyrics";
+    else {
+      set_track_info_query += iter->first + " = :" + iter->first;
     }
   
     if (iter != --changed_values_map.end()) {
@@ -2183,11 +2201,11 @@ void Dingo::DBManager::setTrackInfo(Gtk::TreeRowReference cur_edit_row_ref, std:
   }
   
   if (d_sqlite3.stepStatement() != Dingo::SQLite::ERROR) {
-    std::cout << "Update Track Succeeded!" << std::endl;
+    //std::cout << "Update Track Succeeded!" << std::endl;
   }
   
   else {
-    std::cout << "Update Track Failed!" << std::endl;
+    //std::cout << "Update Track Failed!" << std::endl;
   }
   
   d_sqlite3.finalizeStatement(); 
@@ -2609,29 +2627,47 @@ void Dingo::DBManager::setMultipleTracksInfo(std::vector<Gtk::TreeRowReference> 
   
     for (unsigned int i = 0; i != variables_count_ceiling; ++i) { 
       Gtk::TreeModel::Row edit_row = *(Dingo::DBManager::trackModel->get_iter(cur_row_ref_vector[i + j * (Dingo::SQLite::LIMIT_VARIABLE_NUMBER - changed_values_map.size())].get_path()));
+      
+      //get the Gtk::TreeModel::Row of d_cur_track_row_ref
+      Gtk::TreeModel::Row cur_track_row;
+      if (d_cur_track_row_ref.is_valid()) {
+        cur_track_row = *(Dingo::DBManager::trackModel->get_iter(d_cur_track_row_ref.get_path()));
+      }
     
       if (!changed_track_title.empty()) {
-        edit_row[(*Dingo::DBManager::trackCR).trackTitle] = changed_track_title;
+        if (cur_track_row) {
+          edit_row[(*Dingo::DBManager::trackCR).trackTitle] = cur_track_row[(*Dingo::DBManager::trackCR).trackID] == edit_row[(*Dingo::DBManager::trackCR).trackID] ? Dingo::Utilities::highlightString(changed_track_title) : changed_track_title;
+        }
       }
     
       if (!changed_track_artist.empty()) {
-        edit_row[(*Dingo::DBManager::trackCR).trackArtist] = changed_track_artist;
+        if (cur_track_row) {
+          edit_row[(*Dingo::DBManager::trackCR).trackArtist] = cur_track_row[(*Dingo::DBManager::trackCR).trackID] == edit_row[(*Dingo::DBManager::trackCR).trackID] ? Dingo::Utilities::highlightString(changed_track_title) : changed_track_title;
+        }
       }
     
       if (!changed_track_album.empty()) {
-        edit_row[(*Dingo::DBManager::trackCR).trackAlbum] = changed_track_album;
+        if (cur_track_row) {
+          edit_row[(*Dingo::DBManager::trackCR).trackAlbum] = cur_track_row[(*Dingo::DBManager::trackCR).trackID] == edit_row[(*Dingo::DBManager::trackCR).trackID] ? Dingo::Utilities::highlightString(changed_track_title) : changed_track_title;
+        }
       }
     
       if (!changed_track_genre.empty()) {
-        edit_row[(*Dingo::DBManager::trackCR).trackGenre] = changed_track_genre;
+        if (cur_track_row) {
+          edit_row[(*Dingo::DBManager::trackCR).trackGenre] = cur_track_row[(*Dingo::DBManager::trackCR).trackID] == edit_row[(*Dingo::DBManager::trackCR).trackID] ? Dingo::Utilities::highlightString(changed_track_title) : changed_track_title;
+        }
       }
     
       if (!changed_track_year.empty()) {
-        edit_row[(*Dingo::DBManager::trackCR).trackYear] = changed_track_year;
+        if (cur_track_row) {
+          edit_row[(*Dingo::DBManager::trackCR).trackYear] = cur_track_row[(*Dingo::DBManager::trackCR).trackID] == edit_row[(*Dingo::DBManager::trackCR).trackID] ? Dingo::Utilities::highlightString(changed_track_title) : changed_track_title;
+        }
       }
     
       if (!changed_track_number.empty()) {
-        edit_row[(*Dingo::DBManager::trackCR).trackNumber] = changed_track_number;
+        if (cur_track_row) {
+          edit_row[(*Dingo::DBManager::trackCR).trackNumber] = cur_track_row[(*Dingo::DBManager::trackCR).trackID] == edit_row[(*Dingo::DBManager::trackCR).trackID] ? Dingo::Utilities::highlightString(changed_track_title) : changed_track_title;
+        }
       }
     
       if (!is_statement_completed) {

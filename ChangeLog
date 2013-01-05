@@ -23,6 +23,12 @@
 	"Play" button is clicked, the empty notification will no 
 	longer appear.
 	
+        - Fixed Track Comment not being saved by "Edit Single Track"
+        
+        - Fixed highlighting error happening when the current 
+        playing song is edited and the changed metadata is either 
+        track number, title, artist, album, or year. 
+	
 	If you want to know general changes made and functionalities
 	available for this version please refer to the NEWS file. If
 	you want to know commit-level changes please use 'git log'

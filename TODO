@@ -30,6 +30,11 @@ Tasks to be done in next releases
     
     - Add to... -> Playlist(s) not updating the TreeModel when opening (fixed)
     
+    - TrackComment is not saved by TrackInfoWindow (fixed)
+    
+    - Markup if the editing song is the currently playing song.
+      (both TrackInfoWindow and MultipleTracksInfoWindow) (fixed)
+    
     - Edit all files to go to Dingo 0.5.1
 
 
