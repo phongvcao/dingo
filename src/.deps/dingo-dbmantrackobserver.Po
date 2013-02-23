@@ -1,4 +1,0 @@
-dingo-dbmantrackobserver.o: dingo-dbmantrackobserver.cc \
- dingo-dbmantrackobserver.h
-
-dingo-dbmantrackobserver.h:

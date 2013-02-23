@@ -1,4 +1,0 @@
-dingo-settingsactionobserver.o: dingo-settingsactionobserver.cc \
- dingo-settingsactionobserver.h
-
-dingo-settingsactionobserver.h:

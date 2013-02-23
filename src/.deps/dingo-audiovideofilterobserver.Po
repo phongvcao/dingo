@@ -1,4 +1,0 @@
-dingo-audiovideofilterobserver.o: dingo-audiovideofilterobserver.cc \
- dingo-audiovideofilterobserver.h
-
-dingo-audiovideofilterobserver.h:

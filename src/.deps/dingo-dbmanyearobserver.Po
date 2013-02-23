@@ -1,4 +1,0 @@
-dingo-dbmanyearobserver.o: dingo-dbmanyearobserver.cc \
- dingo-dbmanyearobserver.h
-
-dingo-dbmanyearobserver.h:

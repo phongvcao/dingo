@@ -1,4 +1,0 @@
-dingo-dbmanalbumobserver.o: dingo-dbmanalbumobserver.cc \
- dingo-dbmanalbumobserver.h
-
-dingo-dbmanalbumobserver.h:

@@ -1,5 +1,0 @@
-dingo-trackplaylisteditwindowobserver.o: \
- dingo-trackplaylisteditwindowobserver.cc \
- dingo-trackplaylisteditwindowobserver.h
-
-dingo-trackplaylisteditwindowobserver.h:

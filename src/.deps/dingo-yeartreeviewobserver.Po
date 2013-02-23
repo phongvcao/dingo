@@ -1,4 +1,0 @@
-dingo-yeartreeviewobserver.o: dingo-yeartreeviewobserver.cc \
- dingo-yeartreeviewobserver.h
-
-dingo-yeartreeviewobserver.h:

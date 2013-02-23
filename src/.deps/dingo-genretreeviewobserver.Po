@@ -1,4 +1,0 @@
-dingo-genretreeviewobserver.o: dingo-genretreeviewobserver.cc \
- dingo-genretreeviewobserver.h
-
-dingo-genretreeviewobserver.h:

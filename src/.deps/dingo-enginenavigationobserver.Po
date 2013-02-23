@@ -1,4 +1,0 @@
-dingo-enginenavigationobserver.o: dingo-enginenavigationobserver.cc \
- dingo-enginenavigationobserver.h
-
-dingo-enginenavigationobserver.h:

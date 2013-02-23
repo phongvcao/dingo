@@ -1,4 +1,0 @@
-dingo-dbmangenreobserver.o: dingo-dbmangenreobserver.cc \
- dingo-dbmangenreobserver.h
-
-dingo-dbmangenreobserver.h:
