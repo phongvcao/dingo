@@ -1,0 +1,4 @@
+dingo-mousemotionobserver.o: dingo-mousemotionobserver.cc \
+ dingo-mousemotionobserver.h
+
+dingo-mousemotionobserver.h:

@@ -1,0 +1,4 @@
+dingo-fullscreenobserver.o: dingo-fullscreenobserver.cc \
+ dingo-fullscreenobserver.h
+
+dingo-fullscreenobserver.h:

@@ -1,0 +1,22 @@
+	../src/dingo-aboutdialog.cc \
+	../src/dingo-albumtreeview.cc \
+	../src/dingo-artisttreeview.cc \
+	../src/dingo-controlbar.cc \
+	../src/dingo-dbmanager.cc \
+	../src/dingo-genretreeview.cc \
+	../src/dingo-mainwindow.cc \
+	../src/dingo-menubar.cc \
+	../src/dingo-multipletracksinfowindow.cc \
+	../src/dingo-playlisttreeview.cc \
+	../src/dingo-processgrid.cc \
+	../src/dingo-notification.cc \
+	../src/dingo-programoptions.cc \
+	../src/dingo-mpriscommon.cc \
+	../src/dingo-statusicon.cc \
+	../src/dingo-toolbar.cc \
+	../src/dingo-trackinfowindow.cc \
+	../src/dingo-trackplaylisteditwindow.cc \
+	../src/dingo-tracktreeview.cc \
+	../src/dingo-utilities.cc \
+	../src/dingo-yeartreeview.cc \
+	../data/integration/dingo.desktop.in

@@ -662,7 +662,9 @@ Glib::ustring Dingo::PlayerEngine::getSubtitleFontDesc() {
 }
 
 void Dingo::PlayerEngine::setVolume(double volume_value) {
-  d_playbin->property_volume() = volume_value;
+  if (d_playbin) {
+    d_playbin->property_volume() = volume_value;
+  }
   
   Dingo::MPRISv2::emitPropertiesChangedSignal(Dingo::MPRISv2::INTERFACE_PLAYER, "Volume");
 }

@@ -1,0 +1,4 @@
+dingo-playorderobserver.o: dingo-playorderobserver.cc \
+ dingo-playorderobserver.h
+
+dingo-playorderobserver.h:

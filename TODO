@@ -35,6 +35,13 @@ Tasks to be done in next releases
     - Markup if the editing song is the currently playing song.
       (both TrackInfoWindow and MultipleTracksInfoWindow) (fixed)
     
+    - Fix Segmentation fault when changing volume (fixed)
+    
+    - Look at playerengine.cc again and fix all other kind of errors
+      related to empty playbin.
+      
+    - Fix two instances of Dingo running at the same time!
+    
     - Edit all files to go to Dingo 0.5.1
 
 
@@ -50,7 +57,9 @@ Tasks to be done in next releases
     - Finish up Dingo::ProcessGrid
       (Add Importing Genres & Importing other kinds of tags)
       
-    - Website must be done.
+    - DONE: Website must be done.
+    
+    - Enter on the Searchbox will automatically plays the current view
 
 
 
@@ -58,6 +67,8 @@ Tasks to be done in next releases
 ----------------------
    
     - Smart Playlist
+    
+    - Use GConf to store configuration data
     
     - Smarter Shuffle (no duplicates, make sure to play all tracks
       without leaving any unplayed)

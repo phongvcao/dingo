@@ -1,0 +1,4 @@
+dingo-dbmanartistobserver.o: dingo-dbmanartistobserver.cc \
+ dingo-dbmanartistobserver.h
+
+dingo-dbmanartistobserver.h:

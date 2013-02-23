@@ -6671,6 +6671,8 @@ ac_config_files="$ac_config_files data/icons/16x16/Makefile data/icons/24x24/Mak
 
 ac_config_files="$ac_config_files data/icons/32x32/Makefile data/icons/48x48/Makefile"
 
+ac_config_files="$ac_config_files data/icons/64x64/Makefile"
+
 ac_config_files="$ac_config_files data/icons/128x128/Makefile data/icons/256x256/Makefile"
 
 ac_config_files="$ac_config_files data/icons/scalable/Makefile data/integration/Makefile"
@@ -7423,6 +7425,7 @@ do
     "data/icons/24x24/Makefile") CONFIG_FILES="$CONFIG_FILES data/icons/24x24/Makefile" ;;
     "data/icons/32x32/Makefile") CONFIG_FILES="$CONFIG_FILES data/icons/32x32/Makefile" ;;
     "data/icons/48x48/Makefile") CONFIG_FILES="$CONFIG_FILES data/icons/48x48/Makefile" ;;
+    "data/icons/64x64/Makefile") CONFIG_FILES="$CONFIG_FILES data/icons/64x64/Makefile" ;;
     "data/icons/128x128/Makefile") CONFIG_FILES="$CONFIG_FILES data/icons/128x128/Makefile" ;;
     "data/icons/256x256/Makefile") CONFIG_FILES="$CONFIG_FILES data/icons/256x256/Makefile" ;;
     "data/icons/scalable/Makefile") CONFIG_FILES="$CONFIG_FILES data/icons/scalable/Makefile" ;;
